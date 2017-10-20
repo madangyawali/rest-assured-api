@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class restAssuredApiDemo.test.CurrencyConverter</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class restAssuredApiDemo.test.CurrencyConverter</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/restAssuredApiDemo.test.html">restAssuredApiDemo.test</a> &gt; CurrencyConverter</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.359s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">validateCurrency</td>
+<td>0.359s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 20 Oct 2017 19:44:17 GMT
+Content-Length: 4598
+
+&lt;wsdl:definitions xmlns:tm=&quot;http://microsoft.com/wsdl/mime/textMatching/&quot; xmlns:soapenc=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:mime=&quot;http://schemas.xmlsoap.org/wsdl/mime/&quot; xmlns:tns=&quot;http://www.webserviceX.NET/&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:s=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap12=&quot;http://schemas.xmlsoap.org/wsdl/soap12/&quot; xmlns:http=&quot;http://schemas.xmlsoap.org/wsdl/http/&quot; targetNamespace=&quot;http://www.webserviceX.NET/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot;&gt;
+  &lt;wsdl:types&gt;
+    &lt;s:schema elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.webserviceX.NET/&quot;&gt;
+      &lt;s:element name=&quot;ConversionRate&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; name=&quot;FromCurrency&quot; type=&quot;tns:Currency&quot;/&gt;
+            &lt;s:element minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; name=&quot;ToCurrency&quot; type=&quot;tns:Currency&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:simpleType name=&quot;Currency&quot;&gt;
+        &lt;s:restriction base=&quot;s:string&quot;&gt;
+          &lt;s:enumeration value=&quot;AFA&quot;/&gt;
+          &lt;s:enumeration value=&quot;ALL&quot;/&gt;
+          &lt;s:enumeration value=&quot;DZD&quot;/&gt;
+          &lt;s:enumeration value=&quot;ARS&quot;/&gt;
+          &lt;s:enumeration value=&quot;AWG&quot;/&gt;
+          &lt;s:enumeration value=&quot;AUD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BSD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BHD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BDT&quot;/&gt;
+          &lt;s:enumeration value=&quot;BBD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BZD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BMD&quot;/&gt;
+          &lt;s:enumeration value=&quot;BTN&quot;/&gt;
+          &lt;s:enumeration value=&quot;BOB&quot;/&gt;
+          &lt;s:enumeration value=&quot;BWP&quot;/&gt;
+          &lt;s:enumeration value=&quot;BRL&quot;/&gt;
+          &lt;s:enumeration value=&quot;GBP&quot;/&gt;
+          &lt;s:enumeration value=&quot;BND&quot;/&gt;
+          &lt;s:enumeration value=&quot;BIF&quot;/&gt;
+          &lt;s:enumeration value=&quot;XOF&quot;/&gt;
+          &lt;s:enumeration value=&quot;XAF&quot;/&gt;
+          &lt;s:enumeration value=&quot;KHR&quot;/&gt;
+          &lt;s:enumeration value=&quot;CAD&quot;/&gt;
+          &lt;s:enumeration value=&quot;CVE&quot;/&gt;
+          &lt;s:enumeration value=&quot;KYD&quot;/&gt;
+          &lt;s:enumeration value=&quot;CLP&quot;/&gt;
+          &lt;s:enumeration value=&quot;CNY&quot;/&gt;
+          &lt;s:enumeration value=&quot;COP&quot;/&gt;
+          &lt;s:enumeration value=&quot;KMF&quot;/&gt;
+          &lt;s:enumeration value=&quot;CRC&quot;/&gt;
+          &lt;s:enumeration value=&quot;HRK&quot;/&gt;
+          &lt;s:enumeration value=&quot;CUP&quot;/&gt;
+          &lt;s:enumeration value=&quot;CYP&quot;/&gt;
+          &lt;s:enumeration value=&quot;CZK&quot;/&gt;
+          &lt;s:enumeration value=&quot;DKK&quot;/&gt;
+          &lt;s:enumeration value=&quot;DJF&quot;/&gt;
+          &lt;s:enumeration value=&quot;DOP&quot;/&gt;
+          &lt;s:enumeration value=&quot;XCD&quot;/&gt;
+          &lt;s:enumeration value=&quot;EGP&quot;/&gt;
+          &lt;s:enumeration value=&quot;SVC&quot;/&gt;
+          &lt;s:enumeration value=&quot;EEK&quot;/&gt;
+          &lt;s:enumeration value=&quot;ETB&quot;/&gt;
+          &lt;s:enumeration value=&quot;EUR&quot;/&gt;
+          &lt;s:enumeration value=&quot;FKP&quot;/&gt;
+          &lt;s:enumeration value=&quot;GMD&quot;/&gt;
+          &lt;s:enumeration value=&quot;GHC&quot;/&gt;
+          &lt;s:enumeration value=&quot;GIP&quot;/&gt;
+          &lt;s:enumeration value=&quot;XAU&quot;/&gt;
+          &lt;s:enumeration value=&quot;GTQ&quot;/&gt;
+          &lt;s:enumeration value=&quot;GNF&quot;/&gt;
+          &lt;s:enumeration value=&quot;GYD&quot;/&gt;
+          &lt;s:enumeration value=&quot;HTG&quot;/&gt;
+          &lt;s:enumeration value=&quot;HNL&quot;/&gt;
+          &lt;s:enumeration value=&quot;HKD&quot;/&gt;
+          &lt;s:enumeration value=&quot;HUF&quot;/&gt;
+          &lt;s:enumeration value=&quot;ISK&quot;/&gt;
+          &lt;s:enumeration value=&quot;INR&quot;/&gt;
+          &lt;s:enumeration value=&quot;IDR&quot;/&gt;
+          &lt;s:enumeration value=&quot;IQD&quot;/&gt;
+          &lt;s:enumeration value=&quot;ILS&quot;/&gt;
+          &lt;s:enumeration value=&quot;JMD&quot;/&gt;
+          &lt;s:enumeration value=&quot;JPY&quot;/&gt;
+          &lt;s:enumeration value=&quot;JOD&quot;/&gt;
+          &lt;s:enumeration value=&quot;KZT&quot;/&gt;
+          &lt;s:enumeration value=&quot;KES&quot;/&gt;
+          &lt;s:enumeration value=&quot;KRW&quot;/&gt;
+          &lt;s:enumeration value=&quot;KWD&quot;/&gt;
+          &lt;s:enumeration value=&quot;LAK&quot;/&gt;
+          &lt;s:enumeration value=&quot;LVL&quot;/&gt;
+          &lt;s:enumeration value=&quot;LBP&quot;/&gt;
+          &lt;s:enumeration value=&quot;LSL&quot;/&gt;
+          &lt;s:enumeration value=&quot;LRD&quot;/&gt;
+          &lt;s:enumeration value=&quot;LYD&quot;/&gt;
+          &lt;s:enumeration value=&quot;LTL&quot;/&gt;
+          &lt;s:enumeration value=&quot;MOP&quot;/&gt;
+          &lt;s:enumeration value=&quot;MKD&quot;/&gt;
+          &lt;s:enumeration value=&quot;MGF&quot;/&gt;
+          &lt;s:enumeration value=&quot;MWK&quot;/&gt;
+          &lt;s:enumeration value=&quot;MYR&quot;/&gt;
+          &lt;s:enumeration value=&quot;MVR&quot;/&gt;
+          &lt;s:enumeration value=&quot;MTL&quot;/&gt;
+          &lt;s:enumeration value=&quot;MRO&quot;/&gt;
+          &lt;s:enumeration value=&quot;MUR&quot;/&gt;
+          &lt;s:enumeration value=&quot;MXN&quot;/&gt;
+          &lt;s:enumeration value=&quot;MDL&quot;/&gt;
+          &lt;s:enumeration value=&quot;MNT&quot;/&gt;
+          &lt;s:enumeration value=&quot;MAD&quot;/&gt;
+          &lt;s:enumeration value=&quot;MZM&quot;/&gt;
+          &lt;s:enumeration value=&quot;MMK&quot;/&gt;
+          &lt;s:enumeration value=&quot;NAD&quot;/&gt;
+          &lt;s:enumeration value=&quot;NPR&quot;/&gt;
+          &lt;s:enumeration value=&quot;ANG&quot;/&gt;
+          &lt;s:enumeration value=&quot;NZD&quot;/&gt;
+          &lt;s:enumeration value=&quot;NIO&quot;/&gt;
+          &lt;s:enumeration value=&quot;NGN&quot;/&gt;
+          &lt;s:enumeration value=&quot;KPW&quot;/&gt;
+          &lt;s:enumeration value=&quot;NOK&quot;/&gt;
+          &lt;s:enumeration value=&quot;OMR&quot;/&gt;
+          &lt;s:enumeration value=&quot;XPF&quot;/&gt;
+          &lt;s:enumeration value=&quot;PKR&quot;/&gt;
+          &lt;s:enumeration value=&quot;XPD&quot;/&gt;
+          &lt;s:enumeration value=&quot;PAB&quot;/&gt;
+          &lt;s:enumeration value=&quot;PGK&quot;/&gt;
+          &lt;s:enumeration value=&quot;PYG&quot;/&gt;
+          &lt;s:enumeration value=&quot;PEN&quot;/&gt;
+          &lt;s:enumeration value=&quot;PHP&quot;/&gt;
+          &lt;s:enumeration value=&quot;XPT&quot;/&gt;
+          &lt;s:enumeration value=&quot;PLN&quot;/&gt;
+          &lt;s:enumeration value=&quot;QAR&quot;/&gt;
+          &lt;s:enumeration value=&quot;ROL&quot;/&gt;
+          &lt;s:enumeration value=&quot;RUB&quot;/&gt;
+          &lt;s:enumeration value=&quot;WST&quot;/&gt;
+          &lt;s:enumeration value=&quot;STD&quot;/&gt;
+          &lt;s:enumeration value=&quot;SAR&quot;/&gt;
+          &lt;s:enumeration value=&quot;SCR&quot;/&gt;
+          &lt;s:enumeration value=&quot;SLL&quot;/&gt;
+          &lt;s:enumeration value=&quot;XAG&quot;/&gt;
+          &lt;s:enumeration value=&quot;SGD&quot;/&gt;
+          &lt;s:enumeration value=&quot;SKK&quot;/&gt;
+          &lt;s:enumeration value=&quot;SIT&quot;/&gt;
+          &lt;s:enumeration value=&quot;SBD&quot;/&gt;
+          &lt;s:enumeration value=&quot;SOS&quot;/&gt;
+          &lt;s:enumeration value=&quot;ZAR&quot;/&gt;
+          &lt;s:enumeration value=&quot;LKR&quot;/&gt;
+          &lt;s:enumeration value=&quot;SHP&quot;/&gt;
+          &lt;s:enumeration value=&quot;SDD&quot;/&gt;
+          &lt;s:enumeration value=&quot;SRG&quot;/&gt;
+          &lt;s:enumeration value=&quot;SZL&quot;/&gt;
+          &lt;s:enumeration value=&quot;SEK&quot;/&gt;
+          &lt;s:enumeration value=&quot;CHF&quot;/&gt;
+          &lt;s:enumeration value=&quot;SYP&quot;/&gt;
+          &lt;s:enumeration value=&quot;TWD&quot;/&gt;
+          &lt;s:enumeration value=&quot;TZS&quot;/&gt;
+          &lt;s:enumeration value=&quot;THB&quot;/&gt;
+          &lt;s:enumeration value=&quot;TOP&quot;/&gt;
+          &lt;s:enumeration value=&quot;TTD&quot;/&gt;
+          &lt;s:enumeration value=&quot;TND&quot;/&gt;
+          &lt;s:enumeration value=&quot;TRL&quot;/&gt;
+          &lt;s:enumeration value=&quot;USD&quot;/&gt;
+          &lt;s:enumeration value=&quot;AED&quot;/&gt;
+          &lt;s:enumeration value=&quot;UGX&quot;/&gt;
+          &lt;s:enumeration value=&quot;UAH&quot;/&gt;
+          &lt;s:enumeration value=&quot;UYU&quot;/&gt;
+          &lt;s:enumeration value=&quot;VUV&quot;/&gt;
+          &lt;s:enumeration value=&quot;VEB&quot;/&gt;
+          &lt;s:enumeration value=&quot;VND&quot;/&gt;
+          &lt;s:enumeration value=&quot;YER&quot;/&gt;
+          &lt;s:enumeration value=&quot;YUM&quot;/&gt;
+          &lt;s:enumeration value=&quot;ZMK&quot;/&gt;
+          &lt;s:enumeration value=&quot;ZWD&quot;/&gt;
+          &lt;s:enumeration value=&quot;TRY&quot;/&gt;
+        &lt;/s:restriction&gt;
+      &lt;/s:simpleType&gt;
+      &lt;s:element name=&quot;ConversionRateResponse&quot;&gt;
+        &lt;s:complexType&gt;
+          &lt;s:sequence&gt;
+            &lt;s:element minOccurs=&quot;1&quot; maxOccurs=&quot;1&quot; name=&quot;ConversionRateResult&quot; type=&quot;s:double&quot;/&gt;
+          &lt;/s:sequence&gt;
+        &lt;/s:complexType&gt;
+      &lt;/s:element&gt;
+      &lt;s:element name=&quot;double&quot; type=&quot;s:double&quot;/&gt;
+    &lt;/s:schema&gt;
+  &lt;/wsdl:types&gt;
+  &lt;wsdl:message name=&quot;ConversionRateSoapIn&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:ConversionRate&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;ConversionRateSoapOut&quot;&gt;
+    &lt;wsdl:part name=&quot;parameters&quot; element=&quot;tns:ConversionRateResponse&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;ConversionRateHttpGetIn&quot;&gt;
+    &lt;wsdl:part name=&quot;FromCurrency&quot; type=&quot;s:string&quot;/&gt;
+    &lt;wsdl:part name=&quot;ToCurrency&quot; type=&quot;s:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;ConversionRateHttpGetOut&quot;&gt;
+    &lt;wsdl:part name=&quot;Body&quot; element=&quot;tns:double&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;ConversionRateHttpPostIn&quot;&gt;
+    &lt;wsdl:part name=&quot;FromCurrency&quot; type=&quot;s:string&quot;/&gt;
+    &lt;wsdl:part name=&quot;ToCurrency&quot; type=&quot;s:string&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:message name=&quot;ConversionRateHttpPostOut&quot;&gt;
+    &lt;wsdl:part name=&quot;Body&quot; element=&quot;tns:double&quot;/&gt;
+  &lt;/wsdl:message&gt;
+  &lt;wsdl:portType name=&quot;CurrencyConvertorSoap&quot;&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;wsdl:documentation xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot;&gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;Get conversion rate from one currency to another currency &amp;lt;b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;&amp;lt;font color='#000080' size='1' face='Verdana'&amp;gt;&amp;lt;u&amp;gt;Differenct currency Code and Names around the world&amp;lt;/u&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;&amp;lt;font face='Verdana' size='1'&amp;gt;AFA-Afghanistan Afghani&amp;lt;br&amp;gt;ALL-Albanian Lek&amp;lt;br&amp;gt;DZD-Algerian Dinar&amp;lt;br&amp;gt;ARS-Argentine Peso&amp;lt;br&amp;gt;AWG-Aruba Florin&amp;lt;br&amp;gt;AUD-Australian Dollar&amp;lt;br&amp;gt;BSD-Bahamian Dollar&amp;lt;br&amp;gt;BHD-Bahraini Dinar&amp;lt;br&amp;gt;BDT-Bangladesh Taka&amp;lt;br&amp;gt;BBD-Barbados Dollar&amp;lt;br&amp;gt;BZD-Belize Dollar&amp;lt;br&amp;gt;BMD-Bermuda Dollar&amp;lt;br&amp;gt;BTN-Bhutan Ngultrum&amp;lt;br&amp;gt;BOB-Bolivian Boliviano&amp;lt;br&amp;gt;BWP-Botswana Pula&amp;lt;br&amp;gt;BRL-Brazilian Real&amp;lt;br&amp;gt;GBP-British Pound&amp;lt;br&amp;gt;BND-Brunei Dollar&amp;lt;br&amp;gt;BIF-Burundi Franc&amp;lt;br&amp;gt;XOF-CFA Franc (BCEAO)&amp;lt;br&amp;gt;XAF-CFA Franc (BEAC)&amp;lt;br&amp;gt;KHR-Cambodia Riel&amp;lt;br&amp;gt;CAD-Canadian Dollar&amp;lt;br&amp;gt;CVE-Cape Verde Escudo&amp;lt;br&amp;gt;KYD-Cayman Islands Dollar&amp;lt;br&amp;gt;CLP-Chilean Peso&amp;lt;br&amp;gt;CNY-Chinese Yuan&amp;lt;br&amp;gt;COP-Colombian Peso&amp;lt;br&amp;gt;KMF-Comoros Franc&amp;lt;br&amp;gt;CRC-Costa Rica Colon&amp;lt;br&amp;gt;HRK-Croatian Kuna&amp;lt;br&amp;gt;CUP-Cuban Peso&amp;lt;br&amp;gt;CYP-Cyprus Pound&amp;lt;br&amp;gt;CZK-Czech Koruna&amp;lt;br&amp;gt;DKK-Danish Krone&amp;lt;br&amp;gt;DJF-Dijibouti Franc&amp;lt;br&amp;gt;DOP-Dominican Peso&amp;lt;br&amp;gt;XCD-East Caribbean Dollar&amp;lt;br&amp;gt;EGP-Egyptian Pound&amp;lt;br&amp;gt;SVC-El Salvador Colon&amp;lt;br&amp;gt;EEK-Estonian Kroon&amp;lt;br&amp;gt;ETB-Ethiopian Birr&amp;lt;br&amp;gt;EUR-Euro&amp;lt;br&amp;gt;FKP-Falkland Islands Pound&amp;lt;br&amp;gt;GMD-Gambian Dalasi&amp;lt;br&amp;gt;GHC-Ghanian Cedi&amp;lt;br&amp;gt;GIP-Gibraltar Pound&amp;lt;br&amp;gt;XAU-Gold Ounces&amp;lt;br&amp;gt;GTQ-Guatemala Quetzal&amp;lt;br&amp;gt;GNF-Guinea Franc&amp;lt;br&amp;gt;GYD-Guyana Dollar&amp;lt;br&amp;gt;HTG-Haiti Gourde&amp;lt;br&amp;gt;HNL-Honduras Lempira&amp;lt;br&amp;gt;HKD-Hong Kong Dollar&amp;lt;br&amp;gt;HUF-Hungarian Forint&amp;lt;br&amp;gt;ISK-Iceland Krona&amp;lt;br&amp;gt;INR-Indian Rupee&amp;lt;br&amp;gt;IDR-Indonesian Rupiah&amp;lt;br&amp;gt;IQD-Iraqi Dinar&amp;lt;br&amp;gt;ILS-Israeli Shekel&amp;lt;br&amp;gt;JMD-Jamaican Dollar&amp;lt;br&amp;gt;JPY-Japanese Yen&amp;lt;br&amp;gt;JOD-Jordanian Dinar&amp;lt;br&amp;gt;KZT-Kazakhstan Tenge&amp;lt;br&amp;gt;KES-Kenyan Shilling&amp;lt;br&amp;gt;KRW-Korean Won&amp;lt;br&amp;gt;KWD-Kuwaiti Dinar&amp;lt;br&amp;gt;LAK-Lao Kip&amp;lt;br&amp;gt;LVL-Latvian Lat&amp;lt;br&amp;gt;LBP-Lebanese Pound&amp;lt;br&amp;gt;LSL-Lesotho Loti&amp;lt;br&amp;gt;LRD-Liberian Dollar&amp;lt;br&amp;gt;LYD-Libyan Dinar&amp;lt;br&amp;gt;LTL-Lithuanian Lita&amp;lt;br&amp;gt;MOP-Macau Pataca&amp;lt;br&amp;gt;MKD-Macedonian Denar&amp;lt;br&amp;gt;MGF-Malagasy Franc&amp;lt;br&amp;gt;MWK-Malawi Kwacha&amp;lt;br&amp;gt;MYR-Malaysian Ringgit&amp;lt;br&amp;gt;MVR-Maldives Rufiyaa&amp;lt;br&amp;gt;MTL-Maltese Lira&amp;lt;br&amp;gt;MRO-Mauritania Ougulya&amp;lt;br&amp;gt;MUR-Mauritius Rupee&amp;lt;br&amp;gt;MXN-Mexican Peso&amp;lt;br&amp;gt;MDL-Moldovan Leu&amp;lt;br&amp;gt;MNT-Mongolian Tugrik&amp;lt;br&amp;gt;MAD-Moroccan Dirham&amp;lt;br&amp;gt;MZM-Mozambique Metical&amp;lt;br&amp;gt;MMK-Myanmar Kyat&amp;lt;br&amp;gt;NAD-Namibian Dollar&amp;lt;br&amp;gt;NPR-Nepalese Rupee&amp;lt;br&amp;gt;ANG-Neth Antilles Guilder&amp;lt;br&amp;gt;NZD-New Zealand Dollar&amp;lt;br&amp;gt;NIO-Nicaragua Cordoba&amp;lt;br&amp;gt;NGN-Nigerian Naira&amp;lt;br&amp;gt;KPW-North Korean Won&amp;lt;br&amp;gt;NOK-Norwegian Krone&amp;lt;br&amp;gt;OMR-Omani Rial&amp;lt;br&amp;gt;XPF-Pacific Franc&amp;lt;br&amp;gt;PKR-Pakistani Rupee&amp;lt;br&amp;gt;XPD-Palladium Ounces&amp;lt;br&amp;gt;PAB-Panama Balboa&amp;lt;br&amp;gt;PGK-Papua New Guinea Kina&amp;lt;br&amp;gt;PYG-Paraguayan Guarani&amp;lt;br&amp;gt;PEN-Peruvian Nuevo Sol&amp;lt;br&amp;gt;PHP-Philippine Peso&amp;lt;br&amp;gt;XPT-Platinum Ounces&amp;lt;br&amp;gt;PLN-Polish Zloty&amp;lt;br&amp;gt;QAR-Qatar Rial&amp;lt;br&amp;gt;ROL-Romanian Leu&amp;lt;br&amp;gt;RUB-Russian Rouble&amp;lt;br&amp;gt;WST-Samoa Tala&amp;lt;br&amp;gt;STD-Sao Tome Dobra&amp;lt;br&amp;gt;SAR-Saudi Arabian Riyal&amp;lt;br&amp;gt;SCR-Seychelles Rupee&amp;lt;br&amp;gt;SLL-Sierra Leone Leone&amp;lt;br&amp;gt;XAG-Silver Ounces&amp;lt;br&amp;gt;SGD-Singapore Dollar&amp;lt;br&amp;gt;SKK-Slovak Koruna&amp;lt;br&amp;gt;SIT-Slovenian Tolar&amp;lt;br&amp;gt;SBD-Solomon Islands Dollar&amp;lt;br&amp;gt;SOS-Somali Shilling&amp;lt;br&amp;gt;ZAR-South African Rand&amp;lt;br&amp;gt;LKR-Sri Lanka Rupee&amp;lt;br&amp;gt;SHP-St Helena Pound&amp;lt;br&amp;gt;SDD-Sudanese Dinar&amp;lt;br&amp;gt;SRG-Surinam Guilder&amp;lt;br&amp;gt;SZL-Swaziland Lilageni&amp;lt;br&amp;gt;SEK-Swedish Krona&amp;lt;br&amp;gt;TRY-Turkey Lira&amp;lt;br&amp;gt;CHF-Swiss Franc&amp;lt;br&amp;gt;SYP-Syrian Pound&amp;lt;br&amp;gt;TWD-Taiwan Dollar&amp;lt;br&amp;gt;TZS-Tanzanian Shilling&amp;lt;br&amp;gt;THB-Thai Baht&amp;lt;br&amp;gt;TOP-Tonga Pa'anga&amp;lt;br&amp;gt;TTD-Trinidad&amp;amp;amp;amp;Tobago Dollar&amp;lt;br&amp;gt;TND-Tunisian Dinar&amp;lt;br&amp;gt;TRL-Turkish Lira&amp;lt;br&amp;gt;USD-U.S. Dollar&amp;lt;br&amp;gt;AED-UAE Dirham&amp;lt;br&amp;gt;UGX-Ugandan Shilling&amp;lt;br&amp;gt;UAH-Ukraine Hryvnia&amp;lt;br&amp;gt;UYU-Uruguayan New Peso&amp;lt;br&amp;gt;VUV-Vanuatu Vatu&amp;lt;br&amp;gt;VEB-Venezuelan Bolivar&amp;lt;br&amp;gt;VND-Vietnam Dong&amp;lt;br&amp;gt;YER-Yemen Riyal&amp;lt;br&amp;gt;YUM-Yugoslav Dinar&amp;lt;br&amp;gt;ZMK-Zambian Kwacha&amp;lt;br&amp;gt;ZWD-Zimbabwe Dollar&amp;lt;/font&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt;&lt;/wsdl:documentation&gt;
+      &lt;wsdl:input message=&quot;tns:ConversionRateSoapIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:ConversionRateSoapOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:portType name=&quot;CurrencyConvertorHttpGet&quot;&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;wsdl:documentation xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot;&gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;Get conversion rate from one currency to another currency &amp;lt;b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;&amp;lt;font color='#000080' size='1' face='Verdana'&amp;gt;&amp;lt;u&amp;gt;Differenct currency Code and Names around the world&amp;lt;/u&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;&amp;lt;font face='Verdana' size='1'&amp;gt;AFA-Afghanistan Afghani&amp;lt;br&amp;gt;ALL-Albanian Lek&amp;lt;br&amp;gt;DZD-Algerian Dinar&amp;lt;br&amp;gt;ARS-Argentine Peso&amp;lt;br&amp;gt;AWG-Aruba Florin&amp;lt;br&amp;gt;AUD-Australian Dollar&amp;lt;br&amp;gt;BSD-Bahamian Dollar&amp;lt;br&amp;gt;BHD-Bahraini Dinar&amp;lt;br&amp;gt;BDT-Bangladesh Taka&amp;lt;br&amp;gt;BBD-Barbados Dollar&amp;lt;br&amp;gt;BZD-Belize Dollar&amp;lt;br&amp;gt;BMD-Bermuda Dollar&amp;lt;br&amp;gt;BTN-Bhutan Ngultrum&amp;lt;br&amp;gt;BOB-Bolivian Boliviano&amp;lt;br&amp;gt;BWP-Botswana Pula&amp;lt;br&amp;gt;BRL-Brazilian Real&amp;lt;br&amp;gt;GBP-British Pound&amp;lt;br&amp;gt;BND-Brunei Dollar&amp;lt;br&amp;gt;BIF-Burundi Franc&amp;lt;br&amp;gt;XOF-CFA Franc (BCEAO)&amp;lt;br&amp;gt;XAF-CFA Franc (BEAC)&amp;lt;br&amp;gt;KHR-Cambodia Riel&amp;lt;br&amp;gt;CAD-Canadian Dollar&amp;lt;br&amp;gt;CVE-Cape Verde Escudo&amp;lt;br&amp;gt;KYD-Cayman Islands Dollar&amp;lt;br&amp;gt;CLP-Chilean Peso&amp;lt;br&amp;gt;CNY-Chinese Yuan&amp;lt;br&amp;gt;COP-Colombian Peso&amp;lt;br&amp;gt;KMF-Comoros Franc&amp;lt;br&amp;gt;CRC-Costa Rica Colon&amp;lt;br&amp;gt;HRK-Croatian Kuna&amp;lt;br&amp;gt;CUP-Cuban Peso&amp;lt;br&amp;gt;CYP-Cyprus Pound&amp;lt;br&amp;gt;CZK-Czech Koruna&amp;lt;br&amp;gt;DKK-Danish Krone&amp;lt;br&amp;gt;DJF-Dijibouti Franc&amp;lt;br&amp;gt;DOP-Dominican Peso&amp;lt;br&amp;gt;XCD-East Caribbean Dollar&amp;lt;br&amp;gt;EGP-Egyptian Pound&amp;lt;br&amp;gt;SVC-El Salvador Colon&amp;lt;br&amp;gt;EEK-Estonian Kroon&amp;lt;br&amp;gt;ETB-Ethiopian Birr&amp;lt;br&amp;gt;EUR-Euro&amp;lt;br&amp;gt;FKP-Falkland Islands Pound&amp;lt;br&amp;gt;GMD-Gambian Dalasi&amp;lt;br&amp;gt;GHC-Ghanian Cedi&amp;lt;br&amp;gt;GIP-Gibraltar Pound&amp;lt;br&amp;gt;XAU-Gold Ounces&amp;lt;br&amp;gt;GTQ-Guatemala Quetzal&amp;lt;br&amp;gt;GNF-Guinea Franc&amp;lt;br&amp;gt;GYD-Guyana Dollar&amp;lt;br&amp;gt;HTG-Haiti Gourde&amp;lt;br&amp;gt;HNL-Honduras Lempira&amp;lt;br&amp;gt;HKD-Hong Kong Dollar&amp;lt;br&amp;gt;HUF-Hungarian Forint&amp;lt;br&amp;gt;ISK-Iceland Krona&amp;lt;br&amp;gt;INR-Indian Rupee&amp;lt;br&amp;gt;IDR-Indonesian Rupiah&amp;lt;br&amp;gt;IQD-Iraqi Dinar&amp;lt;br&amp;gt;ILS-Israeli Shekel&amp;lt;br&amp;gt;JMD-Jamaican Dollar&amp;lt;br&amp;gt;JPY-Japanese Yen&amp;lt;br&amp;gt;JOD-Jordanian Dinar&amp;lt;br&amp;gt;KZT-Kazakhstan Tenge&amp;lt;br&amp;gt;KES-Kenyan Shilling&amp;lt;br&amp;gt;KRW-Korean Won&amp;lt;br&amp;gt;KWD-Kuwaiti Dinar&amp;lt;br&amp;gt;LAK-Lao Kip&amp;lt;br&amp;gt;LVL-Latvian Lat&amp;lt;br&amp;gt;LBP-Lebanese Pound&amp;lt;br&amp;gt;LSL-Lesotho Loti&amp;lt;br&amp;gt;LRD-Liberian Dollar&amp;lt;br&amp;gt;LYD-Libyan Dinar&amp;lt;br&amp;gt;LTL-Lithuanian Lita&amp;lt;br&amp;gt;MOP-Macau Pataca&amp;lt;br&amp;gt;MKD-Macedonian Denar&amp;lt;br&amp;gt;MGF-Malagasy Franc&amp;lt;br&amp;gt;MWK-Malawi Kwacha&amp;lt;br&amp;gt;MYR-Malaysian Ringgit&amp;lt;br&amp;gt;MVR-Maldives Rufiyaa&amp;lt;br&amp;gt;MTL-Maltese Lira&amp;lt;br&amp;gt;MRO-Mauritania Ougulya&amp;lt;br&amp;gt;MUR-Mauritius Rupee&amp;lt;br&amp;gt;MXN-Mexican Peso&amp;lt;br&amp;gt;MDL-Moldovan Leu&amp;lt;br&amp;gt;MNT-Mongolian Tugrik&amp;lt;br&amp;gt;MAD-Moroccan Dirham&amp;lt;br&amp;gt;MZM-Mozambique Metical&amp;lt;br&amp;gt;MMK-Myanmar Kyat&amp;lt;br&amp;gt;NAD-Namibian Dollar&amp;lt;br&amp;gt;NPR-Nepalese Rupee&amp;lt;br&amp;gt;ANG-Neth Antilles Guilder&amp;lt;br&amp;gt;NZD-New Zealand Dollar&amp;lt;br&amp;gt;NIO-Nicaragua Cordoba&amp;lt;br&amp;gt;NGN-Nigerian Naira&amp;lt;br&amp;gt;KPW-North Korean Won&amp;lt;br&amp;gt;NOK-Norwegian Krone&amp;lt;br&amp;gt;OMR-Omani Rial&amp;lt;br&amp;gt;XPF-Pacific Franc&amp;lt;br&amp;gt;PKR-Pakistani Rupee&amp;lt;br&amp;gt;XPD-Palladium Ounces&amp;lt;br&amp;gt;PAB-Panama Balboa&amp;lt;br&amp;gt;PGK-Papua New Guinea Kina&amp;lt;br&amp;gt;PYG-Paraguayan Guarani&amp;lt;br&amp;gt;PEN-Peruvian Nuevo Sol&amp;lt;br&amp;gt;PHP-Philippine Peso&amp;lt;br&amp;gt;XPT-Platinum Ounces&amp;lt;br&amp;gt;PLN-Polish Zloty&amp;lt;br&amp;gt;QAR-Qatar Rial&amp;lt;br&amp;gt;ROL-Romanian Leu&amp;lt;br&amp;gt;RUB-Russian Rouble&amp;lt;br&amp;gt;WST-Samoa Tala&amp;lt;br&amp;gt;STD-Sao Tome Dobra&amp;lt;br&amp;gt;SAR-Saudi Arabian Riyal&amp;lt;br&amp;gt;SCR-Seychelles Rupee&amp;lt;br&amp;gt;SLL-Sierra Leone Leone&amp;lt;br&amp;gt;XAG-Silver Ounces&amp;lt;br&amp;gt;SGD-Singapore Dollar&amp;lt;br&amp;gt;SKK-Slovak Koruna&amp;lt;br&amp;gt;SIT-Slovenian Tolar&amp;lt;br&amp;gt;SBD-Solomon Islands Dollar&amp;lt;br&amp;gt;SOS-Somali Shilling&amp;lt;br&amp;gt;ZAR-South African Rand&amp;lt;br&amp;gt;LKR-Sri Lanka Rupee&amp;lt;br&amp;gt;SHP-St Helena Pound&amp;lt;br&amp;gt;SDD-Sudanese Dinar&amp;lt;br&amp;gt;SRG-Surinam Guilder&amp;lt;br&amp;gt;SZL-Swaziland Lilageni&amp;lt;br&amp;gt;SEK-Swedish Krona&amp;lt;br&amp;gt;TRY-Turkey Lira&amp;lt;br&amp;gt;CHF-Swiss Franc&amp;lt;br&amp;gt;SYP-Syrian Pound&amp;lt;br&amp;gt;TWD-Taiwan Dollar&amp;lt;br&amp;gt;TZS-Tanzanian Shilling&amp;lt;br&amp;gt;THB-Thai Baht&amp;lt;br&amp;gt;TOP-Tonga Pa'anga&amp;lt;br&amp;gt;TTD-Trinidad&amp;amp;amp;amp;Tobago Dollar&amp;lt;br&amp;gt;TND-Tunisian Dinar&amp;lt;br&amp;gt;TRL-Turkish Lira&amp;lt;br&amp;gt;USD-U.S. Dollar&amp;lt;br&amp;gt;AED-UAE Dirham&amp;lt;br&amp;gt;UGX-Ugandan Shilling&amp;lt;br&amp;gt;UAH-Ukraine Hryvnia&amp;lt;br&amp;gt;UYU-Uruguayan New Peso&amp;lt;br&amp;gt;VUV-Vanuatu Vatu&amp;lt;br&amp;gt;VEB-Venezuelan Bolivar&amp;lt;br&amp;gt;VND-Vietnam Dong&amp;lt;br&amp;gt;YER-Yemen Riyal&amp;lt;br&amp;gt;YUM-Yugoslav Dinar&amp;lt;br&amp;gt;ZMK-Zambian Kwacha&amp;lt;br&amp;gt;ZWD-Zimbabwe Dollar&amp;lt;/font&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt;&lt;/wsdl:documentation&gt;
+      &lt;wsdl:input message=&quot;tns:ConversionRateHttpGetIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:ConversionRateHttpGetOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:portType name=&quot;CurrencyConvertorHttpPost&quot;&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;wsdl:documentation xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot;&gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;Get conversion rate from one currency to another currency &amp;lt;b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;p&amp;gt;&amp;lt;b&amp;gt;&amp;lt;font color='#000080' size='1' face='Verdana'&amp;gt;&amp;lt;u&amp;gt;Differenct currency Code and Names around the world&amp;lt;/u&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;blockquote&amp;gt;&amp;lt;p&amp;gt;&amp;lt;font face='Verdana' size='1'&amp;gt;AFA-Afghanistan Afghani&amp;lt;br&amp;gt;ALL-Albanian Lek&amp;lt;br&amp;gt;DZD-Algerian Dinar&amp;lt;br&amp;gt;ARS-Argentine Peso&amp;lt;br&amp;gt;AWG-Aruba Florin&amp;lt;br&amp;gt;AUD-Australian Dollar&amp;lt;br&amp;gt;BSD-Bahamian Dollar&amp;lt;br&amp;gt;BHD-Bahraini Dinar&amp;lt;br&amp;gt;BDT-Bangladesh Taka&amp;lt;br&amp;gt;BBD-Barbados Dollar&amp;lt;br&amp;gt;BZD-Belize Dollar&amp;lt;br&amp;gt;BMD-Bermuda Dollar&amp;lt;br&amp;gt;BTN-Bhutan Ngultrum&amp;lt;br&amp;gt;BOB-Bolivian Boliviano&amp;lt;br&amp;gt;BWP-Botswana Pula&amp;lt;br&amp;gt;BRL-Brazilian Real&amp;lt;br&amp;gt;GBP-British Pound&amp;lt;br&amp;gt;BND-Brunei Dollar&amp;lt;br&amp;gt;BIF-Burundi Franc&amp;lt;br&amp;gt;XOF-CFA Franc (BCEAO)&amp;lt;br&amp;gt;XAF-CFA Franc (BEAC)&amp;lt;br&amp;gt;KHR-Cambodia Riel&amp;lt;br&amp;gt;CAD-Canadian Dollar&amp;lt;br&amp;gt;CVE-Cape Verde Escudo&amp;lt;br&amp;gt;KYD-Cayman Islands Dollar&amp;lt;br&amp;gt;CLP-Chilean Peso&amp;lt;br&amp;gt;CNY-Chinese Yuan&amp;lt;br&amp;gt;COP-Colombian Peso&amp;lt;br&amp;gt;KMF-Comoros Franc&amp;lt;br&amp;gt;CRC-Costa Rica Colon&amp;lt;br&amp;gt;HRK-Croatian Kuna&amp;lt;br&amp;gt;CUP-Cuban Peso&amp;lt;br&amp;gt;CYP-Cyprus Pound&amp;lt;br&amp;gt;CZK-Czech Koruna&amp;lt;br&amp;gt;DKK-Danish Krone&amp;lt;br&amp;gt;DJF-Dijibouti Franc&amp;lt;br&amp;gt;DOP-Dominican Peso&amp;lt;br&amp;gt;XCD-East Caribbean Dollar&amp;lt;br&amp;gt;EGP-Egyptian Pound&amp;lt;br&amp;gt;SVC-El Salvador Colon&amp;lt;br&amp;gt;EEK-Estonian Kroon&amp;lt;br&amp;gt;ETB-Ethiopian Birr&amp;lt;br&amp;gt;EUR-Euro&amp;lt;br&amp;gt;FKP-Falkland Islands Pound&amp;lt;br&amp;gt;GMD-Gambian Dalasi&amp;lt;br&amp;gt;GHC-Ghanian Cedi&amp;lt;br&amp;gt;GIP-Gibraltar Pound&amp;lt;br&amp;gt;XAU-Gold Ounces&amp;lt;br&amp;gt;GTQ-Guatemala Quetzal&amp;lt;br&amp;gt;GNF-Guinea Franc&amp;lt;br&amp;gt;GYD-Guyana Dollar&amp;lt;br&amp;gt;HTG-Haiti Gourde&amp;lt;br&amp;gt;HNL-Honduras Lempira&amp;lt;br&amp;gt;HKD-Hong Kong Dollar&amp;lt;br&amp;gt;HUF-Hungarian Forint&amp;lt;br&amp;gt;ISK-Iceland Krona&amp;lt;br&amp;gt;INR-Indian Rupee&amp;lt;br&amp;gt;IDR-Indonesian Rupiah&amp;lt;br&amp;gt;IQD-Iraqi Dinar&amp;lt;br&amp;gt;ILS-Israeli Shekel&amp;lt;br&amp;gt;JMD-Jamaican Dollar&amp;lt;br&amp;gt;JPY-Japanese Yen&amp;lt;br&amp;gt;JOD-Jordanian Dinar&amp;lt;br&amp;gt;KZT-Kazakhstan Tenge&amp;lt;br&amp;gt;KES-Kenyan Shilling&amp;lt;br&amp;gt;KRW-Korean Won&amp;lt;br&amp;gt;KWD-Kuwaiti Dinar&amp;lt;br&amp;gt;LAK-Lao Kip&amp;lt;br&amp;gt;LVL-Latvian Lat&amp;lt;br&amp;gt;LBP-Lebanese Pound&amp;lt;br&amp;gt;LSL-Lesotho Loti&amp;lt;br&amp;gt;LRD-Liberian Dollar&amp;lt;br&amp;gt;LYD-Libyan Dinar&amp;lt;br&amp;gt;LTL-Lithuanian Lita&amp;lt;br&amp;gt;MOP-Macau Pataca&amp;lt;br&amp;gt;MKD-Macedonian Denar&amp;lt;br&amp;gt;MGF-Malagasy Franc&amp;lt;br&amp;gt;MWK-Malawi Kwacha&amp;lt;br&amp;gt;MYR-Malaysian Ringgit&amp;lt;br&amp;gt;MVR-Maldives Rufiyaa&amp;lt;br&amp;gt;MTL-Maltese Lira&amp;lt;br&amp;gt;MRO-Mauritania Ougulya&amp;lt;br&amp;gt;MUR-Mauritius Rupee&amp;lt;br&amp;gt;MXN-Mexican Peso&amp;lt;br&amp;gt;MDL-Moldovan Leu&amp;lt;br&amp;gt;MNT-Mongolian Tugrik&amp;lt;br&amp;gt;MAD-Moroccan Dirham&amp;lt;br&amp;gt;MZM-Mozambique Metical&amp;lt;br&amp;gt;MMK-Myanmar Kyat&amp;lt;br&amp;gt;NAD-Namibian Dollar&amp;lt;br&amp;gt;NPR-Nepalese Rupee&amp;lt;br&amp;gt;ANG-Neth Antilles Guilder&amp;lt;br&amp;gt;NZD-New Zealand Dollar&amp;lt;br&amp;gt;NIO-Nicaragua Cordoba&amp;lt;br&amp;gt;NGN-Nigerian Naira&amp;lt;br&amp;gt;KPW-North Korean Won&amp;lt;br&amp;gt;NOK-Norwegian Krone&amp;lt;br&amp;gt;OMR-Omani Rial&amp;lt;br&amp;gt;XPF-Pacific Franc&amp;lt;br&amp;gt;PKR-Pakistani Rupee&amp;lt;br&amp;gt;XPD-Palladium Ounces&amp;lt;br&amp;gt;PAB-Panama Balboa&amp;lt;br&amp;gt;PGK-Papua New Guinea Kina&amp;lt;br&amp;gt;PYG-Paraguayan Guarani&amp;lt;br&amp;gt;PEN-Peruvian Nuevo Sol&amp;lt;br&amp;gt;PHP-Philippine Peso&amp;lt;br&amp;gt;XPT-Platinum Ounces&amp;lt;br&amp;gt;PLN-Polish Zloty&amp;lt;br&amp;gt;QAR-Qatar Rial&amp;lt;br&amp;gt;ROL-Romanian Leu&amp;lt;br&amp;gt;RUB-Russian Rouble&amp;lt;br&amp;gt;WST-Samoa Tala&amp;lt;br&amp;gt;STD-Sao Tome Dobra&amp;lt;br&amp;gt;SAR-Saudi Arabian Riyal&amp;lt;br&amp;gt;SCR-Seychelles Rupee&amp;lt;br&amp;gt;SLL-Sierra Leone Leone&amp;lt;br&amp;gt;XAG-Silver Ounces&amp;lt;br&amp;gt;SGD-Singapore Dollar&amp;lt;br&amp;gt;SKK-Slovak Koruna&amp;lt;br&amp;gt;SIT-Slovenian Tolar&amp;lt;br&amp;gt;SBD-Solomon Islands Dollar&amp;lt;br&amp;gt;SOS-Somali Shilling&amp;lt;br&amp;gt;ZAR-South African Rand&amp;lt;br&amp;gt;LKR-Sri Lanka Rupee&amp;lt;br&amp;gt;SHP-St Helena Pound&amp;lt;br&amp;gt;SDD-Sudanese Dinar&amp;lt;br&amp;gt;SRG-Surinam Guilder&amp;lt;br&amp;gt;SZL-Swaziland Lilageni&amp;lt;br&amp;gt;SEK-Swedish Krona&amp;lt;br&amp;gt;TRY-Turkey Lira&amp;lt;br&amp;gt;CHF-Swiss Franc&amp;lt;br&amp;gt;SYP-Syrian Pound&amp;lt;br&amp;gt;TWD-Taiwan Dollar&amp;lt;br&amp;gt;TZS-Tanzanian Shilling&amp;lt;br&amp;gt;THB-Thai Baht&amp;lt;br&amp;gt;TOP-Tonga Pa'anga&amp;lt;br&amp;gt;TTD-Trinidad&amp;amp;amp;amp;Tobago Dollar&amp;lt;br&amp;gt;TND-Tunisian Dinar&amp;lt;br&amp;gt;TRL-Turkish Lira&amp;lt;br&amp;gt;USD-U.S. Dollar&amp;lt;br&amp;gt;AED-UAE Dirham&amp;lt;br&amp;gt;UGX-Ugandan Shilling&amp;lt;br&amp;gt;UAH-Ukraine Hryvnia&amp;lt;br&amp;gt;UYU-Uruguayan New Peso&amp;lt;br&amp;gt;VUV-Vanuatu Vatu&amp;lt;br&amp;gt;VEB-Venezuelan Bolivar&amp;lt;br&amp;gt;VND-Vietnam Dong&amp;lt;br&amp;gt;YER-Yemen Riyal&amp;lt;br&amp;gt;YUM-Yugoslav Dinar&amp;lt;br&amp;gt;ZMK-Zambian Kwacha&amp;lt;br&amp;gt;ZWD-Zimbabwe Dollar&amp;lt;/font&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt;&lt;/wsdl:documentation&gt;
+      &lt;wsdl:input message=&quot;tns:ConversionRateHttpPostIn&quot;/&gt;
+      &lt;wsdl:output message=&quot;tns:ConversionRateHttpPostOut&quot;/&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:portType&gt;
+  &lt;wsdl:binding name=&quot;CurrencyConvertorSoap&quot; type=&quot;tns:CurrencyConvertorSoap&quot;&gt;
+    &lt;soap:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;soap:operation soapAction=&quot;http://www.webserviceX.NET/ConversionRate&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:binding name=&quot;CurrencyConvertorSoap12&quot; type=&quot;tns:CurrencyConvertorSoap&quot;&gt;
+    &lt;soap12:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;soap12:operation soapAction=&quot;http://www.webserviceX.NET/ConversionRate&quot; style=&quot;document&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;soap12:body use=&quot;literal&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:binding name=&quot;CurrencyConvertorHttpGet&quot; type=&quot;tns:CurrencyConvertorHttpGet&quot;&gt;
+    &lt;http:binding verb=&quot;GET&quot;/&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;http:operation location=&quot;/ConversionRate&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;http:urlEncoded/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;mime:mimeXml part=&quot;Body&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:binding name=&quot;CurrencyConvertorHttpPost&quot; type=&quot;tns:CurrencyConvertorHttpPost&quot;&gt;
+    &lt;http:binding verb=&quot;POST&quot;/&gt;
+    &lt;wsdl:operation name=&quot;ConversionRate&quot;&gt;
+      &lt;http:operation location=&quot;/ConversionRate&quot;/&gt;
+      &lt;wsdl:input&gt;
+        &lt;mime:content type=&quot;application/x-www-form-urlencoded&quot;/&gt;
+      &lt;/wsdl:input&gt;
+      &lt;wsdl:output&gt;
+        &lt;mime:mimeXml part=&quot;Body&quot;/&gt;
+      &lt;/wsdl:output&gt;
+    &lt;/wsdl:operation&gt;
+  &lt;/wsdl:binding&gt;
+  &lt;wsdl:service name=&quot;CurrencyConvertor&quot;&gt;
+    &lt;wsdl:port name=&quot;CurrencyConvertorSoap&quot; binding=&quot;tns:CurrencyConvertorSoap&quot;&gt;
+      &lt;soap:address location=&quot;http://www.webservicex.net/CurrencyConvertor.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+    &lt;wsdl:port name=&quot;CurrencyConvertorSoap12&quot; binding=&quot;tns:CurrencyConvertorSoap12&quot;&gt;
+      &lt;soap12:address location=&quot;http://www.webservicex.net/CurrencyConvertor.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+    &lt;wsdl:port name=&quot;CurrencyConvertorHttpGet&quot; binding=&quot;tns:CurrencyConvertorHttpGet&quot;&gt;
+      &lt;http:address location=&quot;http://www.webservicex.net/CurrencyConvertor.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+    &lt;wsdl:port name=&quot;CurrencyConvertorHttpPost&quot; binding=&quot;tns:CurrencyConvertorHttpPost&quot;&gt;
+      &lt;http:address location=&quot;http://www.webservicex.net/CurrencyConvertor.asmx&quot;/&gt;
+    &lt;/wsdl:port&gt;
+  &lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.2.1</a> at Oct 20, 2017 2:44:26 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="googleMapApi.GoogleMapApi" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-20T19:44:24" hostname="MPS-MGYAWALI" time="1.374">
+  <properties/>
+  <testcase name="verifyCityCountry" classname="googleMapApi.GoogleMapApi" time="0.499"/>
+  <testcase name="makeSureApiIsUp" classname="googleMapApi.GoogleMapApi" time="0.22"/>
+  <testcase name="getResponseGoogleMapApiData" classname="googleMapApi.GoogleMapApi" time="0.655"/>
+  <system-out><![CDATA[Output data is: 
+{
+   "predictions" : [
+      {
+         "description" : "Paris, France",
+         "id" : "691b237b0322f28988f3ce03e321ff72a12167fd",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+         "reference" : "CjQlAAAAcOEU-xG2CdT7pMQ07SIpByFU3fdfL5L5kpwQa2DSFGQNGF9GjpSzki0HNcvzRB8lEhDdsuahpwlzsl5YBmxzoRuoGhRPpOSHqdbsi9BM9mn1fbXCyszu-w",
+         "structured_formatting" : {
+            "main_text" : "Paris",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "France"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Paris"
+            },
+            {
+               "offset" : 7,
+               "value" : "France"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Paris, TX, United States",
+         "id" : "518e47f3d7f39277eb3bc895cb84419c2b43b5ac",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJmysnFgZYSoYRSfPTL2YJuck",
+         "reference" : "CjQwAAAAqvdh6TJ7gijp_iLVNfSBOXhzqLh7oxGl8iPGy9PsqB-MgU2uAuKrYVbX9FXhIYprEhDxDCFSDz00Md9aqamJeMpRGhR1ygHJkphIT-Nm8SaGVxAjsvOQ3w",
+         "structured_formatting" : {
+            "main_text" : "Paris",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "TX, United States"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Paris"
+            },
+            {
+               "offset" : 7,
+               "value" : "TX"
+            },
+            {
+               "offset" : 11,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Paris, TN, United States",
+         "id" : "9093091daae9a06a3695203bd8e68a2defef674b",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJ4zHP-Sije4gRBDEsVxunOWg",
+         "reference" : "CjQwAAAAYt_kiUNapWiUkwV2uS3igVXcPM4mIGoMISUR2kVdbDS6LzESYsXBrzcDUmFUEp5yEhCMxSj5ZHFXpQRppj__x2TbGhSz2AsrW4GwdHYb4G9wanCpe568RA",
+         "structured_formatting" : {
+            "main_text" : "Paris",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "TN, United States"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Paris"
+            },
+            {
+               "offset" : 7,
+               "value" : "TN"
+            },
+            {
+               "offset" : 11,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Paris, KY, United States",
+         "id" : "e2522e18d49652387de0a8c030b09ed9fb3251b8",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJsU7_xMfKQ4gReI89RJn0-RQ",
+         "reference" : "CjQwAAAA9tWsYw-KneKAQ9-6uAU1PjBW_gVZ29iqjbH6UoeosyA1C3I5bERdmiE5zrWflzHBEhDvmS69rBA5GmzV3N8jQAMcGhQtCp2SimwAb4yaVQVG_xoQDhe1mw",
+         "structured_formatting" : {
+            "main_text" : "Paris",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "KY, United States"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Paris"
+            },
+            {
+               "offset" : 7,
+               "value" : "KY"
+            },
+            {
+               "offset" : 11,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Paris, IL, United States",
+         "id" : "9f7cdc811ad60d1d92b51fcc314e14546551ec5e",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJO5XGnIyXcogRT-7Ymxr9xgo",
+         "reference" : "CjQwAAAApc5_SeAkZR5Zips1T77aHHyS_5EpvWES21Fn0cZ5wuJ9fjz8fIsqy612yNzDybiAEhDTQwNukIoQPq9R8GM1X6hRGhTVSl5LXyeorVRBaVR_ChtTeFrCog",
+         "structured_formatting" : {
+            "main_text" : "Paris",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "IL, United States"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Paris"
+            },
+            {
+               "offset" : 7,
+               "value" : "IL"
+            },
+            {
+               "offset" : 11,
+               "value" : "United States"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      }
+   ],
+   "status" : "OK"
+}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

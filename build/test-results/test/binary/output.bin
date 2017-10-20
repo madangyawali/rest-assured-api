@@ -1,0 +1,3230 @@
+HTTP/1.1 200 OK
+"Cache-Control: private, max-age=0
+&Content-Type: text/xml; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+$Date: Fri, 20 Oct 2017 19:44:13 GMT
+Content-Length: 4598
+
+„<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webserviceX.NET/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+\    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
+(      <s:element name="ConversionRate">
+        <s:complexType>
+          <s:sequence>
+]            <s:element minOccurs="1" maxOccurs="1" name="FromCurrency" type="tns:Currency"/>
+[            <s:element minOccurs="1" maxOccurs="1" name="ToCurrency" type="tns:Currency"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+%      <s:simpleType name="Currency">
+(        <s:restriction base="s:string">
+'          <s:enumeration value="AFA"/>
+'          <s:enumeration value="ALL"/>
+'          <s:enumeration value="DZD"/>
+'          <s:enumeration value="ARS"/>
+'          <s:enumeration value="AWG"/>
+'          <s:enumeration value="AUD"/>
+'          <s:enumeration value="BSD"/>
+'          <s:enumeration value="BHD"/>
+'          <s:enumeration value="BDT"/>
+'          <s:enumeration value="BBD"/>
+'          <s:enumeration value="BZD"/>
+'          <s:enumeration value="BMD"/>
+'          <s:enumeration value="BTN"/>
+'          <s:enumeration value="BOB"/>
+'          <s:enumeration value="BWP"/>
+'          <s:enumeration value="BRL"/>
+'          <s:enumeration value="GBP"/>
+'          <s:enumeration value="BND"/>
+'          <s:enumeration value="BIF"/>
+'          <s:enumeration value="XOF"/>
+'          <s:enumeration value="XAF"/>
+'          <s:enumeration value="KHR"/>
+'          <s:enumeration value="CAD"/>
+'          <s:enumeration value="CVE"/>
+'          <s:enumeration value="KYD"/>
+'          <s:enumeration value="CLP"/>
+'          <s:enumeration value="CNY"/>
+'          <s:enumeration value="COP"/>
+'          <s:enumeration value="KMF"/>
+'          <s:enumeration value="CRC"/>
+'          <s:enumeration value="HRK"/>
+'          <s:enumeration value="CUP"/>
+'          <s:enumeration value="CYP"/>
+'          <s:enumeration value="CZK"/>
+'          <s:enumeration value="DKK"/>
+'          <s:enumeration value="DJF"/>
+'          <s:enumeration value="DOP"/>
+'          <s:enumeration value="XCD"/>
+'          <s:enumeration value="EGP"/>
+'          <s:enumeration value="SVC"/>
+'          <s:enumeration value="EEK"/>
+'          <s:enumeration value="ETB"/>
+'          <s:enumeration value="EUR"/>
+'          <s:enumeration value="FKP"/>
+'          <s:enumeration value="GMD"/>
+'          <s:enumeration value="GHC"/>
+'          <s:enumeration value="GIP"/>
+'          <s:enumeration value="XAU"/>
+'          <s:enumeration value="GTQ"/>
+'          <s:enumeration value="GNF"/>
+'          <s:enumeration value="GYD"/>
+'          <s:enumeration value="HTG"/>
+'          <s:enumeration value="HNL"/>
+'          <s:enumeration value="HKD"/>
+'          <s:enumeration value="HUF"/>
+'          <s:enumeration value="ISK"/>
+'          <s:enumeration value="INR"/>
+'          <s:enumeration value="IDR"/>
+'          <s:enumeration value="IQD"/>
+'          <s:enumeration value="ILS"/>
+'          <s:enumeration value="JMD"/>
+'          <s:enumeration value="JPY"/>
+'          <s:enumeration value="JOD"/>
+'          <s:enumeration value="KZT"/>
+'          <s:enumeration value="KES"/>
+'          <s:enumeration value="KRW"/>
+'          <s:enumeration value="KWD"/>
+'          <s:enumeration value="LAK"/>
+'          <s:enumeration value="LVL"/>
+'          <s:enumeration value="LBP"/>
+'          <s:enumeration value="LSL"/>
+'          <s:enumeration value="LRD"/>
+'          <s:enumeration value="LYD"/>
+'          <s:enumeration value="LTL"/>
+'          <s:enumeration value="MOP"/>
+'          <s:enumeration value="MKD"/>
+'          <s:enumeration value="MGF"/>
+'          <s:enumeration value="MWK"/>
+'          <s:enumeration value="MYR"/>
+'          <s:enumeration value="MVR"/>
+'          <s:enumeration value="MTL"/>
+'          <s:enumeration value="MRO"/>
+'          <s:enumeration value="MUR"/>
+'          <s:enumeration value="MXN"/>
+'          <s:enumeration value="MDL"/>
+'          <s:enumeration value="MNT"/>
+'          <s:enumeration value="MAD"/>
+'          <s:enumeration value="MZM"/>
+'          <s:enumeration value="MMK"/>
+'          <s:enumeration value="NAD"/>
+'          <s:enumeration value="NPR"/>
+'          <s:enumeration value="ANG"/>
+'          <s:enumeration value="NZD"/>
+'          <s:enumeration value="NIO"/>
+'          <s:enumeration value="NGN"/>
+'          <s:enumeration value="KPW"/>
+'          <s:enumeration value="NOK"/>
+'          <s:enumeration value="OMR"/>
+'          <s:enumeration value="XPF"/>
+'          <s:enumeration value="PKR"/>
+'          <s:enumeration value="XPD"/>
+'          <s:enumeration value="PAB"/>
+'          <s:enumeration value="PGK"/>
+'          <s:enumeration value="PYG"/>
+'          <s:enumeration value="PEN"/>
+'          <s:enumeration value="PHP"/>
+'          <s:enumeration value="XPT"/>
+'          <s:enumeration value="PLN"/>
+'          <s:enumeration value="QAR"/>
+'          <s:enumeration value="ROL"/>
+'          <s:enumeration value="RUB"/>
+'          <s:enumeration value="WST"/>
+'          <s:enumeration value="STD"/>
+'          <s:enumeration value="SAR"/>
+'          <s:enumeration value="SCR"/>
+'          <s:enumeration value="SLL"/>
+'          <s:enumeration value="XAG"/>
+'          <s:enumeration value="SGD"/>
+'          <s:enumeration value="SKK"/>
+'          <s:enumeration value="SIT"/>
+'          <s:enumeration value="SBD"/>
+'          <s:enumeration value="SOS"/>
+'          <s:enumeration value="ZAR"/>
+'          <s:enumeration value="LKR"/>
+'          <s:enumeration value="SHP"/>
+'          <s:enumeration value="SDD"/>
+'          <s:enumeration value="SRG"/>
+'          <s:enumeration value="SZL"/>
+'          <s:enumeration value="SEK"/>
+'          <s:enumeration value="CHF"/>
+'          <s:enumeration value="SYP"/>
+'          <s:enumeration value="TWD"/>
+'          <s:enumeration value="TZS"/>
+'          <s:enumeration value="THB"/>
+'          <s:enumeration value="TOP"/>
+'          <s:enumeration value="TTD"/>
+'          <s:enumeration value="TND"/>
+'          <s:enumeration value="TRL"/>
+'          <s:enumeration value="USD"/>
+'          <s:enumeration value="AED"/>
+'          <s:enumeration value="UGX"/>
+'          <s:enumeration value="UAH"/>
+'          <s:enumeration value="UYU"/>
+'          <s:enumeration value="VUV"/>
+'          <s:enumeration value="VEB"/>
+'          <s:enumeration value="VND"/>
+'          <s:enumeration value="YER"/>
+'          <s:enumeration value="YUM"/>
+'          <s:enumeration value="ZMK"/>
+'          <s:enumeration value="ZWD"/>
+'          <s:enumeration value="TRY"/>
+        </s:restriction>
+      </s:simpleType>
+0      <s:element name="ConversionRateResponse">
+        <s:complexType>
+          <s:sequence>
+a            <s:element minOccurs="1" maxOccurs="1" name="ConversionRateResult" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+1      <s:element name="double" type="s:double"/>
+    </s:schema>
+  </wsdl:types>
+-  <wsdl:message name="ConversionRateSoapIn">
+@    <wsdl:part name="parameters" element="tns:ConversionRate"/>
+  </wsdl:message>
+.  <wsdl:message name="ConversionRateSoapOut">
+H    <wsdl:part name="parameters" element="tns:ConversionRateResponse"/>
+  </wsdl:message>
+0  <wsdl:message name="ConversionRateHttpGetIn">
+5    <wsdl:part name="FromCurrency" type="s:string"/>
+3    <wsdl:part name="ToCurrency" type="s:string"/>
+  </wsdl:message>
+1  <wsdl:message name="ConversionRateHttpGetOut">
+2    <wsdl:part name="Body" element="tns:double"/>
+  </wsdl:message>
+1  <wsdl:message name="ConversionRateHttpPostIn">
+5    <wsdl:part name="FromCurrency" type="s:string"/>
+3    <wsdl:part name="ToCurrency" type="s:string"/>
+  </wsdl:message>
+2  <wsdl:message name="ConversionRateHttpPostOut">
+2    <wsdl:part name="Body" element="tns:double"/>
+  </wsdl:message>
+/  <wsdl:portType name="CurrencyConvertorSoap">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+7      <wsdl:input message="tns:ConversionRateSoapIn"/>
+9      <wsdl:output message="tns:ConversionRateSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+2  <wsdl:portType name="CurrencyConvertorHttpGet">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+:      <wsdl:input message="tns:ConversionRateHttpGetIn"/>
+<      <wsdl:output message="tns:ConversionRateHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+3  <wsdl:portType name="CurrencyConvertorHttpPost">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+;      <wsdl:input message="tns:ConversionRateHttpPostIn"/>
+=      <wsdl:output message="tns:ConversionRateHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+O  <wsdl:binding name="CurrencyConvertorSoap" type="tns:CurrencyConvertorSoap">
+E    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
++    <wsdl:operation name="ConversionRate">
+`      <soap:operation soapAction="http://www.webserviceX.NET/ConversionRate" style="document"/>
+      <wsdl:input>
+#        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+#        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+Q  <wsdl:binding name="CurrencyConvertorSoap12" type="tns:CurrencyConvertorSoap">
+G    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
++    <wsdl:operation name="ConversionRate">
+b      <soap12:operation soapAction="http://www.webserviceX.NET/ConversionRate" style="document"/>
+      <wsdl:input>
+%        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+%        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+U  <wsdl:binding name="CurrencyConvertorHttpGet" type="tns:CurrencyConvertorHttpGet">
+    <http:binding verb="GET"/>
++    <wsdl:operation name="ConversionRate">
+3      <http:operation location="/ConversionRate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+$        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+W  <wsdl:binding name="CurrencyConvertorHttpPost" type="tns:CurrencyConvertorHttpPost">
+     <http:binding verb="POST"/>
++    <wsdl:operation name="ConversionRate">
+3      <http:operation location="/ConversionRate"/>
+      <wsdl:input>
+A        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+$        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+*  <wsdl:service name="CurrencyConvertor">
+Q    <wsdl:port name="CurrencyConvertorSoap" binding="tns:CurrencyConvertorSoap">
+S      <soap:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+U    <wsdl:port name="CurrencyConvertorSoap12" binding="tns:CurrencyConvertorSoap12">
+U      <soap12:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+W    <wsdl:port name="CurrencyConvertorHttpGet" binding="tns:CurrencyConvertorHttpGet">
+S      <http:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+Y    <wsdl:port name="CurrencyConvertorHttpPost" binding="tns:CurrencyConvertorHttpPost">
+S      <http:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
+Output data is: 
+{
+  "RestResponse" : {
+3    "messages" : [ "Total [249] records found." ],
+    "result" : [ {
+      "name" : "Afghanistan",
+      "alpha2_code" : "AF",
+      "alpha3_code" : "AFG"
+	    }, {
+!      "name" : "??land Islands",
+      "alpha2_code" : "AX",
+      "alpha3_code" : "ALA"
+	    }, {
+      "name" : "Albania",
+      "alpha2_code" : "AL",
+      "alpha3_code" : "ALB"
+	    }, {
+      "name" : "Algeria",
+      "alpha2_code" : "DZ",
+      "alpha3_code" : "DZA"
+	    }, {
+!      "name" : "American Samoa",
+      "alpha2_code" : "AS",
+      "alpha3_code" : "ASM"
+	    }, {
+      "name" : "Andorra",
+      "alpha2_code" : "AD",
+      "alpha3_code" : "AND"
+	    }, {
+      "name" : "Angola",
+      "alpha2_code" : "AO",
+      "alpha3_code" : "AGO"
+	    }, {
+      "name" : "Anguilla",
+      "alpha2_code" : "AI",
+      "alpha3_code" : "AIA"
+	    }, {
+      "name" : "Antarctica",
+      "alpha2_code" : "AQ",
+      "alpha3_code" : "ATA"
+	    }, {
+&      "name" : "Antigua and Barbuda",
+      "alpha2_code" : "AG",
+      "alpha3_code" : "ATG"
+	    }, {
+      "name" : "Argentina",
+      "alpha2_code" : "AR",
+      "alpha3_code" : "ARG"
+	    }, {
+      "name" : "Armenia",
+      "alpha2_code" : "AM",
+      "alpha3_code" : "ARM"
+	    }, {
+      "name" : "Aruba",
+      "alpha2_code" : "AW",
+      "alpha3_code" : "ABW"
+	    }, {
+      "name" : "Australia",
+      "alpha2_code" : "AU",
+      "alpha3_code" : "AUS"
+	    }, {
+      "name" : "Austria",
+      "alpha2_code" : "AT",
+      "alpha3_code" : "AUT"
+	    }, {
+      "name" : "Azerbaijan",
+      "alpha2_code" : "AZ",
+      "alpha3_code" : "AZE"
+	    }, {
+      "name" : "Bahamas",
+      "alpha2_code" : "BS",
+      "alpha3_code" : "BHS"
+	    }, {
+      "name" : "Bahrain",
+      "alpha2_code" : "BH",
+      "alpha3_code" : "BHR"
+	    }, {
+      "name" : "Bangladesh",
+      "alpha2_code" : "BD",
+      "alpha3_code" : "BGD"
+	    }, {
+      "name" : "Barbados",
+      "alpha2_code" : "BB",
+      "alpha3_code" : "BRB"
+	    }, {
+      "name" : "Belarus",
+      "alpha2_code" : "BY",
+      "alpha3_code" : "BLR"
+	    }, {
+      "name" : "Belgium",
+      "alpha2_code" : "BE",
+      "alpha3_code" : "BEL"
+	    }, {
+      "name" : "Belize",
+      "alpha2_code" : "BZ",
+      "alpha3_code" : "BLZ"
+	    }, {
+      "name" : "Benin",
+      "alpha2_code" : "BJ",
+      "alpha3_code" : "BEN"
+	    }, {
+      "name" : "Bermuda",
+      "alpha2_code" : "BM",
+      "alpha3_code" : "BMU"
+	    }, {
+      "name" : "Bhutan",
+      "alpha2_code" : "BT",
+      "alpha3_code" : "BTN"
+	    }, {
+3      "name" : "Bolivia (Plurinational State of)",
+      "alpha2_code" : "BO",
+      "alpha3_code" : "BOL"
+	    }, {
+3      "name" : "Bonaire, Sint Eustatius and Saba",
+      "alpha2_code" : "BQ",
+      "alpha3_code" : "BES"
+	    }, {
+)      "name" : "Bosnia and Herzegovina",
+      "alpha2_code" : "BA",
+      "alpha3_code" : "BIH"
+	    }, {
+      "name" : "Botswana",
+      "alpha2_code" : "BW",
+      "alpha3_code" : "BWA"
+	    }, {
+       "name" : "Bouvet Island",
+      "alpha2_code" : "BV",
+      "alpha3_code" : "BVT"
+	    }, {
+      "name" : "Brazil",
+      "alpha2_code" : "BR",
+      "alpha3_code" : "BRA"
+	    }, {
+1      "name" : "British Indian Ocean Territory",
+      "alpha2_code" : "IO",
+      "alpha3_code" : "IOT"
+	    }, {
+$      "name" : "Brunei Darussalam",
+      "alpha2_code" : "BN",
+      "alpha3_code" : "BRN"
+	    }, {
+      "name" : "Bulgaria",
+      "alpha2_code" : "BG",
+      "alpha3_code" : "BGR"
+	    }, {
+      "name" : "Burkina Faso",
+      "alpha2_code" : "BF",
+      "alpha3_code" : "BFA"
+	    }, {
+      "name" : "Burundi",
+      "alpha2_code" : "BI",
+      "alpha3_code" : "BDI"
+	    }, {
+      "name" : "Cabo Verde",
+      "alpha2_code" : "CV",
+      "alpha3_code" : "CPV"
+	    }, {
+      "name" : "Cambodia",
+      "alpha2_code" : "KH",
+      "alpha3_code" : "KHM"
+	    }, {
+      "name" : "Cameroon",
+      "alpha2_code" : "CM",
+      "alpha3_code" : "CMR"
+	    }, {
+      "name" : "Canada",
+      "alpha2_code" : "CA",
+      "alpha3_code" : "CAN"
+	    }, {
+!      "name" : "Cayman Islands",
+      "alpha2_code" : "KY",
+      "alpha3_code" : "CYM"
+	    }, {
++      "name" : "Central African Republic",
+      "alpha2_code" : "CF",
+      "alpha3_code" : "CAF"
+	    }, {
+      "name" : "Chad",
+      "alpha2_code" : "TD",
+      "alpha3_code" : "TCD"
+	    }, {
+      "name" : "Chile",
+      "alpha2_code" : "CL",
+      "alpha3_code" : "CHL"
+	    }, {
+      "name" : "China",
+      "alpha2_code" : "CN",
+      "alpha3_code" : "CHN"
+	    }, {
+#      "name" : "Christmas Island",
+      "alpha2_code" : "CX",
+      "alpha3_code" : "CXR"
+	    }, {
+*      "name" : "Cocos (Keeling) Islands",
+      "alpha2_code" : "CC",
+      "alpha3_code" : "CCK"
+	    }, {
+      "name" : "Colombia",
+      "alpha2_code" : "CO",
+      "alpha3_code" : "COL"
+	    }, {
+      "name" : "Comoros",
+      "alpha2_code" : "KM",
+      "alpha3_code" : "COM"
+	    }, {
+      "name" : "Congo",
+      "alpha2_code" : "CG",
+      "alpha3_code" : "COG"
+	    }, {
+5      "name" : "Congo (Democratic Republic of the)",
+      "alpha2_code" : "CD",
+      "alpha3_code" : "COD"
+	    }, {
+      "name" : "Cook Islands",
+      "alpha2_code" : "CK",
+      "alpha3_code" : "COK"
+	    }, {
+      "name" : "Costa Rica",
+      "alpha2_code" : "CR",
+      "alpha3_code" : "CRI"
+	    }, {
+!      "name" : "C??te d'Ivoire",
+      "alpha2_code" : "CI",
+      "alpha3_code" : "CIV"
+	    }, {
+      "name" : "Croatia",
+      "alpha2_code" : "HR",
+      "alpha3_code" : "HRV"
+	    }, {
+      "name" : "Cuba",
+      "alpha2_code" : "CU",
+      "alpha3_code" : "CUB"
+	    }, {
+      "name" : "Cura??ao",
+      "alpha2_code" : "CW",
+      "alpha3_code" : "CUW"
+	    }, {
+      "name" : "Cyprus",
+      "alpha2_code" : "CY",
+      "alpha3_code" : "CYP"
+	    }, {
+      "name" : "Czechia",
+      "alpha2_code" : "CZ",
+      "alpha3_code" : "CZE"
+	    }, {
+      "name" : "Denmark",
+      "alpha2_code" : "DK",
+      "alpha3_code" : "DNK"
+	    }, {
+      "name" : "Djibouti",
+      "alpha2_code" : "DJ",
+      "alpha3_code" : "DJI"
+	    }, {
+      "name" : "Dominica",
+      "alpha2_code" : "DM",
+      "alpha3_code" : "DMA"
+	    }, {
+%      "name" : "Dominican Republic",
+      "alpha2_code" : "DO",
+      "alpha3_code" : "DOM"
+	    }, {
+      "name" : "Ecuador",
+      "alpha2_code" : "EC",
+      "alpha3_code" : "ECU"
+	    }, {
+      "name" : "Egypt",
+      "alpha2_code" : "EG",
+      "alpha3_code" : "EGY"
+	    }, {
+      "name" : "El Salvador",
+      "alpha2_code" : "SV",
+      "alpha3_code" : "SLV"
+	    }, {
+$      "name" : "Equatorial Guinea",
+      "alpha2_code" : "GQ",
+      "alpha3_code" : "GNQ"
+	    }, {
+      "name" : "Eritrea",
+      "alpha2_code" : "ER",
+      "alpha3_code" : "ERI"
+	    }, {
+      "name" : "Estonia",
+      "alpha2_code" : "EE",
+      "alpha3_code" : "EST"
+	    }, {
+      "name" : "Ethiopia",
+      "alpha2_code" : "ET",
+      "alpha3_code" : "ETH"
+	    }, {
+.      "name" : "Falkland Islands (Malvinas)",
+      "alpha2_code" : "FK",
+      "alpha3_code" : "FLK"
+	    }, {
+       "name" : "Faroe Islands",
+      "alpha2_code" : "FO",
+      "alpha3_code" : "FRO"
+	    }, {
+      "name" : "Fiji",
+      "alpha2_code" : "FJ",
+      "alpha3_code" : "FJI"
+	    }, {
+      "name" : "Finland",
+      "alpha2_code" : "FI",
+      "alpha3_code" : "FIN"
+	    }, {
+      "name" : "France",
+      "alpha2_code" : "FR",
+      "alpha3_code" : "FRA"
+	    }, {
+       "name" : "French Guiana",
+      "alpha2_code" : "GF",
+      "alpha3_code" : "GUF"
+	    }, {
+#      "name" : "French Polynesia",
+      "alpha2_code" : "PF",
+      "alpha3_code" : "PYF"
+	    }, {
+.      "name" : "French Southern Territories",
+      "alpha2_code" : "TF",
+      "alpha3_code" : "ATF"
+	    }, {
+      "name" : "Gabon",
+      "alpha2_code" : "GA",
+      "alpha3_code" : "GAB"
+	    }, {
+      "name" : "Gambia",
+      "alpha2_code" : "GM",
+      "alpha3_code" : "GMB"
+	    }, {
+      "name" : "Georgia",
+      "alpha2_code" : "GE",
+      "alpha3_code" : "GEO"
+	    }, {
+      "name" : "Germany",
+      "alpha2_code" : "DE",
+      "alpha3_code" : "DEU"
+	    }, {
+      "name" : "Ghana",
+      "alpha2_code" : "GH",
+      "alpha3_code" : "GHA"
+	    }, {
+      "name" : "Gibraltar",
+      "alpha2_code" : "GI",
+      "alpha3_code" : "GIB"
+	    }, {
+      "name" : "Greece",
+      "alpha2_code" : "GR",
+      "alpha3_code" : "GRC"
+	    }, {
+      "name" : "Greenland",
+      "alpha2_code" : "GL",
+      "alpha3_code" : "GRL"
+	    }, {
+      "name" : "Grenada",
+      "alpha2_code" : "GD",
+      "alpha3_code" : "GRD"
+	    }, {
+      "name" : "Guadeloupe",
+      "alpha2_code" : "GP",
+      "alpha3_code" : "GLP"
+	    }, {
+      "name" : "Guam",
+      "alpha2_code" : "GU",
+      "alpha3_code" : "GUM"
+	    }, {
+      "name" : "Guatemala",
+      "alpha2_code" : "GT",
+      "alpha3_code" : "GTM"
+	    }, {
+      "name" : "Guernsey",
+      "alpha2_code" : "GG",
+      "alpha3_code" : "GGY"
+	    }, {
+      "name" : "Guinea",
+      "alpha2_code" : "GN",
+      "alpha3_code" : "GIN"
+	    }, {
+       "name" : "Guinea-Bissau",
+      "alpha2_code" : "GW",
+      "alpha3_code" : "GNB"
+	    }, {
+      "name" : "Guyana",
+      "alpha2_code" : "GY",
+      "alpha3_code" : "GUY"
+	    }, {
+      "name" : "Haiti",
+      "alpha2_code" : "HT",
+      "alpha3_code" : "HTI"
+	    }, {
+4      "name" : "Heard Island and McDonald Islands",
+      "alpha2_code" : "HM",
+      "alpha3_code" : "HMD"
+	    }, {
+      "name" : "Holy See",
+      "alpha2_code" : "VA",
+      "alpha3_code" : "VAT"
+	    }, {
+      "name" : "Honduras",
+      "alpha2_code" : "HN",
+      "alpha3_code" : "HND"
+	    }, {
+      "name" : "Hong Kong",
+      "alpha2_code" : "HK",
+      "alpha3_code" : "HKG"
+	    }, {
+      "name" : "Hungary",
+      "alpha2_code" : "HU",
+      "alpha3_code" : "HUN"
+	    }, {
+      "name" : "Iceland",
+      "alpha2_code" : "IS",
+      "alpha3_code" : "ISL"
+	    }, {
+      "name" : "India",
+      "alpha2_code" : "IN",
+      "alpha3_code" : "IND"
+	    }, {
+      "name" : "Indonesia",
+      "alpha2_code" : "ID",
+      "alpha3_code" : "IDN"
+	    }, {
+-      "name" : "Iran (Islamic Republic of)",
+      "alpha2_code" : "IR",
+      "alpha3_code" : "IRN"
+	    }, {
+      "name" : "Iraq",
+      "alpha2_code" : "IQ",
+      "alpha3_code" : "IRQ"
+	    }, {
+      "name" : "Ireland",
+      "alpha2_code" : "IE",
+      "alpha3_code" : "IRL"
+	    }, {
+      "name" : "Isle of Man",
+      "alpha2_code" : "IM",
+      "alpha3_code" : "IMN"
+	    }, {
+      "name" : "Israel",
+      "alpha2_code" : "IL",
+      "alpha3_code" : "ISR"
+	    }, {
+      "name" : "Italy",
+      "alpha2_code" : "IT",
+      "alpha3_code" : "ITA"
+	    }, {
+      "name" : "Jamaica",
+      "alpha2_code" : "JM",
+      "alpha3_code" : "JAM"
+	    }, {
+      "name" : "Japan",
+      "alpha2_code" : "JP",
+      "alpha3_code" : "JPN"
+	    }, {
+      "name" : "Jersey",
+      "alpha2_code" : "JE",
+      "alpha3_code" : "JEY"
+	    }, {
+      "name" : "Jordan",
+      "alpha2_code" : "JO",
+      "alpha3_code" : "JOR"
+	    }, {
+      "name" : "Kazakhstan",
+      "alpha2_code" : "KZ",
+      "alpha3_code" : "KAZ"
+	    }, {
+      "name" : "Kenya",
+      "alpha2_code" : "KE",
+      "alpha3_code" : "KEN"
+	    }, {
+      "name" : "Kiribati",
+      "alpha2_code" : "KI",
+      "alpha3_code" : "KIR"
+	    }, {
+:      "name" : "Korea (Democratic People's Republic of)",
+      "alpha2_code" : "KP",
+      "alpha3_code" : "PRK"
+	    }, {
+&      "name" : "Korea (Republic of)",
+      "alpha2_code" : "KR",
+      "alpha3_code" : "KOR"
+	    }, {
+      "name" : "Kuwait",
+      "alpha2_code" : "KW",
+      "alpha3_code" : "KWT"
+	    }, {
+      "name" : "Kyrgyzstan",
+      "alpha2_code" : "KG",
+      "alpha3_code" : "KGZ"
+	    }, {
+3      "name" : "Lao People's Democratic Republic",
+      "alpha2_code" : "LA",
+      "alpha3_code" : "LAO"
+	    }, {
+      "name" : "Latvia",
+      "alpha2_code" : "LV",
+      "alpha3_code" : "LVA"
+	    }, {
+      "name" : "Lebanon",
+      "alpha2_code" : "LB",
+      "alpha3_code" : "LBN"
+	    }, {
+      "name" : "Lesotho",
+      "alpha2_code" : "LS",
+      "alpha3_code" : "LSO"
+	    }, {
+      "name" : "Liberia",
+      "alpha2_code" : "LR",
+      "alpha3_code" : "LBR"
+	    }, {
+      "name" : "Libya",
+      "alpha2_code" : "LY",
+      "alpha3_code" : "LBY"
+	    }, {
+       "name" : "Liechtenstein",
+      "alpha2_code" : "LI",
+      "alpha3_code" : "LIE"
+	    }, {
+      "name" : "Lithuania",
+      "alpha2_code" : "LT",
+      "alpha3_code" : "LTU"
+	    }, {
+      "name" : "Luxembourg",
+      "alpha2_code" : "LU",
+      "alpha3_code" : "LUX"
+	    }, {
+      "name" : "Macao",
+      "alpha2_code" : "MO",
+      "alpha3_code" : "MAC"
+	    }, {
+>      "name" : "Macedonia (the former Yugoslav Republic of)",
+      "alpha2_code" : "MK",
+      "alpha3_code" : "MKD"
+	    }, {
+      "name" : "Madagascar",
+      "alpha2_code" : "MG",
+      "alpha3_code" : "MDG"
+	    }, {
+      "name" : "Malawi",
+      "alpha2_code" : "MW",
+      "alpha3_code" : "MWI"
+	    }, {
+      "name" : "Malaysia",
+      "alpha2_code" : "MY",
+      "alpha3_code" : "MYS"
+	    }, {
+      "name" : "Maldives",
+      "alpha2_code" : "MV",
+      "alpha3_code" : "MDV"
+	    }, {
+      "name" : "Mali",
+      "alpha2_code" : "ML",
+      "alpha3_code" : "MLI"
+	    }, {
+      "name" : "Malta",
+      "alpha2_code" : "MT",
+      "alpha3_code" : "MLT"
+	    }, {
+#      "name" : "Marshall Islands",
+      "alpha2_code" : "MH",
+      "alpha3_code" : "MHL"
+	    }, {
+      "name" : "Martinique",
+      "alpha2_code" : "MQ",
+      "alpha3_code" : "MTQ"
+	    }, {
+      "name" : "Mauritania",
+      "alpha2_code" : "MR",
+      "alpha3_code" : "MRT"
+	    }, {
+      "name" : "Mauritius",
+      "alpha2_code" : "MU",
+      "alpha3_code" : "MUS"
+	    }, {
+      "name" : "Mayotte",
+      "alpha2_code" : "YT",
+      "alpha3_code" : "MYT"
+	    }, {
+      "name" : "Mexico",
+      "alpha2_code" : "MX",
+      "alpha3_code" : "MEX"
+	    }, {
+3      "name" : "Micronesia (Federated States of)",
+      "alpha2_code" : "FM",
+      "alpha3_code" : "FSM"
+	    }, {
+(      "name" : "Moldova (Republic of)",
+      "alpha2_code" : "MD",
+      "alpha3_code" : "MDA"
+	    }, {
+      "name" : "Monaco",
+      "alpha2_code" : "MC",
+      "alpha3_code" : "MCO"
+	    }, {
+      "name" : "Mongolia",
+      "alpha2_code" : "MN",
+      "alpha3_code" : "MNG"
+	    }, {
+      "name" : "Montenegro",
+      "alpha2_code" : "ME",
+      "alpha3_code" : "MNE"
+	    }, {
+      "name" : "Montserrat",
+      "alpha2_code" : "MS",
+      "alpha3_code" : "MSR"
+	    }, {
+      "name" : "Morocco",
+      "alpha2_code" : "MA",
+      "alpha3_code" : "MAR"
+	    }, {
+      "name" : "Mozambique",
+      "alpha2_code" : "MZ",
+      "alpha3_code" : "MOZ"
+	    }, {
+      "name" : "Myanmar",
+      "alpha2_code" : "MM",
+      "alpha3_code" : "MMR"
+	    }, {
+      "name" : "Namibia",
+      "alpha2_code" : "NA",
+      "alpha3_code" : "NAM"
+	    }, {
+      "name" : "Nauru",
+      "alpha2_code" : "NR",
+      "alpha3_code" : "NRU"
+	    }, {
+      "name" : "Nepal",
+      "alpha2_code" : "NP",
+      "alpha3_code" : "NPL"
+	    }, {
+      "name" : "Netherlands",
+      "alpha2_code" : "NL",
+      "alpha3_code" : "NLD"
+	    }, {
+       "name" : "New Caledonia",
+      "alpha2_code" : "NC",
+      "alpha3_code" : "NCL"
+	    }, {
+      "name" : "New Zealand",
+      "alpha2_code" : "NZ",
+      "alpha3_code" : "NZL"
+	    }, {
+      "name" : "Nicaragua",
+      "alpha2_code" : "NI",
+      "alpha3_code" : "NIC"
+	    }, {
+      "name" : "Niger",
+      "alpha2_code" : "NE",
+      "alpha3_code" : "NER"
+	    }, {
+      "name" : "Nigeria",
+      "alpha2_code" : "NG",
+      "alpha3_code" : "NGA"
+	    }, {
+      "name" : "Niue",
+      "alpha2_code" : "NU",
+      "alpha3_code" : "NIU"
+	    }, {
+!      "name" : "Norfolk Island",
+      "alpha2_code" : "NF",
+      "alpha3_code" : "NFK"
+	    }, {
++      "name" : "Northern Mariana Islands",
+      "alpha2_code" : "MP",
+      "alpha3_code" : "MNP"
+	    }, {
+      "name" : "Norway",
+      "alpha2_code" : "NO",
+      "alpha3_code" : "NOR"
+	    }, {
+      "name" : "Oman",
+      "alpha2_code" : "OM",
+      "alpha3_code" : "OMN"
+	    }, {
+      "name" : "Pakistan",
+      "alpha2_code" : "PK",
+      "alpha3_code" : "PAK"
+	    }, {
+      "name" : "Palau",
+      "alpha2_code" : "PW",
+      "alpha3_code" : "PLW"
+	    }, {
+&      "name" : "Palestine, State of",
+      "alpha2_code" : "PS",
+      "alpha3_code" : "PSE"
+	    }, {
+      "name" : "Panama",
+      "alpha2_code" : "PA",
+      "alpha3_code" : "PAN"
+	    }, {
+#      "name" : "Papua New Guinea",
+      "alpha2_code" : "PG",
+      "alpha3_code" : "PNG"
+	    }, {
+      "name" : "Paraguay",
+      "alpha2_code" : "PY",
+      "alpha3_code" : "PRY"
+	    }, {
+      "name" : "Peru",
+      "alpha2_code" : "PE",
+      "alpha3_code" : "PER"
+	    }, {
+      "name" : "Philippines",
+      "alpha2_code" : "PH",
+      "alpha3_code" : "PHL"
+	    }, {
+      "name" : "Pitcairn",
+      "alpha2_code" : "PN",
+      "alpha3_code" : "PCN"
+	    }, {
+      "name" : "Poland",
+      "alpha2_code" : "PL",
+      "alpha3_code" : "POL"
+	    }, {
+      "name" : "Portugal",
+      "alpha2_code" : "PT",
+      "alpha3_code" : "PRT"
+	    }, {
+      "name" : "Puerto Rico",
+      "alpha2_code" : "PR",
+      "alpha3_code" : "PRI"
+	    }, {
+      "name" : "Qatar",
+      "alpha2_code" : "QA",
+      "alpha3_code" : "QAT"
+	    }, {
+      "name" : "R??union",
+      "alpha2_code" : "RE",
+      "alpha3_code" : "REU"
+	    }, {
+      "name" : "Romania",
+      "alpha2_code" : "RO",
+      "alpha3_code" : "ROU"
+	    }, {
+%      "name" : "Russian Federation",
+      "alpha2_code" : "RU",
+      "alpha3_code" : "RUS"
+	    }, {
+      "name" : "Rwanda",
+      "alpha2_code" : "RW",
+      "alpha3_code" : "RWA"
+	    }, {
+$      "name" : "Saint Barth??lemy",
+      "alpha2_code" : "BL",
+      "alpha3_code" : "BLM"
+	    }, {
+?      "name" : "Saint Helena, Ascension and Tristan da Cunha",
+      "alpha2_code" : "SH",
+      "alpha3_code" : "SHN"
+	    }, {
+(      "name" : "Saint Kitts and Nevis",
+      "alpha2_code" : "KN",
+      "alpha3_code" : "KNA"
+	    }, {
+      "name" : "Saint Lucia",
+      "alpha2_code" : "LC",
+      "alpha3_code" : "LCA"
+	    }, {
+-      "name" : "Saint Martin (French part)",
+      "alpha2_code" : "MF",
+      "alpha3_code" : "MAF"
+	    }, {
+,      "name" : "Saint Pierre and Miquelon",
+      "alpha2_code" : "PM",
+      "alpha3_code" : "SPM"
+	    }, {
+3      "name" : "Saint Vincent and the Grenadines",
+      "alpha2_code" : "VC",
+      "alpha3_code" : "VCT"
+	    }, {
+      "name" : "Samoa",
+      "alpha2_code" : "WS",
+      "alpha3_code" : "WSM"
+	    }, {
+      "name" : "San Marino",
+      "alpha2_code" : "SM",
+      "alpha3_code" : "SMR"
+	    }, {
+(      "name" : "Sao Tome and Principe",
+      "alpha2_code" : "ST",
+      "alpha3_code" : "STP"
+	    }, {
+      "name" : "Saudi Arabia",
+      "alpha2_code" : "SA",
+      "alpha3_code" : "SAU"
+	    }, {
+      "name" : "Senegal",
+      "alpha2_code" : "SN",
+      "alpha3_code" : "SEN"
+	    }, {
+      "name" : "Serbia",
+      "alpha2_code" : "RS",
+      "alpha3_code" : "SRB"
+	    }, {
+      "name" : "Seychelles",
+      "alpha2_code" : "SC",
+      "alpha3_code" : "SYC"
+	    }, {
+      "name" : "Sierra Leone",
+      "alpha2_code" : "SL",
+      "alpha3_code" : "SLE"
+	    }, {
+      "name" : "Singapore",
+      "alpha2_code" : "SG",
+      "alpha3_code" : "SGP"
+	    }, {
+,      "name" : "Sint Maarten (Dutch part)",
+      "alpha2_code" : "SX",
+      "alpha3_code" : "SXM"
+	    }, {
+      "name" : "Slovakia",
+      "alpha2_code" : "SK",
+      "alpha3_code" : "SVK"
+	    }, {
+      "name" : "Slovenia",
+      "alpha2_code" : "SI",
+      "alpha3_code" : "SVN"
+	    }, {
+"      "name" : "Solomon Islands",
+      "alpha2_code" : "SB",
+      "alpha3_code" : "SLB"
+	    }, {
+      "name" : "Somalia",
+      "alpha2_code" : "SO",
+      "alpha3_code" : "SOM"
+	    }, {
+      "name" : "South Africa",
+      "alpha2_code" : "ZA",
+      "alpha3_code" : "ZAF"
+	    }, {
+?      "name" : "South Georgia and the South Sandwich Islands",
+      "alpha2_code" : "GS",
+      "alpha3_code" : "SGS"
+	    }, {
+      "name" : "South Sudan",
+      "alpha2_code" : "SS",
+      "alpha3_code" : "SSD"
+	    }, {
+      "name" : "Spain",
+      "alpha2_code" : "ES",
+      "alpha3_code" : "ESP"
+	    }, {
+      "name" : "Sri Lanka",
+      "alpha2_code" : "LK",
+      "alpha3_code" : "LKA"
+	    }, {
+      "name" : "Sudan",
+      "alpha2_code" : "SD",
+      "alpha3_code" : "SDN"
+	    }, {
+      "name" : "Suriname",
+      "alpha2_code" : "SR",
+      "alpha3_code" : "SUR"
+	    }, {
+)      "name" : "Svalbard and Jan Mayen",
+      "alpha2_code" : "SJ",
+      "alpha3_code" : "SJM"
+	    }, {
+      "name" : "Swaziland",
+      "alpha2_code" : "SZ",
+      "alpha3_code" : "SWZ"
+	    }, {
+      "name" : "Sweden",
+      "alpha2_code" : "SE",
+      "alpha3_code" : "SWE"
+	    }, {
+      "name" : "Switzerland",
+      "alpha2_code" : "CH",
+      "alpha3_code" : "CHE"
+	    }, {
+'      "name" : "Syrian Arab Republic",
+      "alpha2_code" : "SY",
+      "alpha3_code" : "SYR"
+	    }, {
+0      "name" : "Taiwan, Province of China [a]",
+      "alpha2_code" : "TW",
+      "alpha3_code" : "TWN"
+	    }, {
+      "name" : "Tajikistan",
+      "alpha2_code" : "TJ",
+      "alpha3_code" : "TJK"
+	    }, {
+/      "name" : "Tanzania, United Republic of",
+      "alpha2_code" : "TZ",
+      "alpha3_code" : "TZA"
+	    }, {
+      "name" : "Thailand",
+      "alpha2_code" : "TH",
+      "alpha3_code" : "THA"
+	    }, {
+      "name" : "Timor-Leste",
+      "alpha2_code" : "TL",
+      "alpha3_code" : "TLS"
+	    }, {
+      "name" : "Togo",
+      "alpha2_code" : "TG",
+      "alpha3_code" : "TGO"
+	    }, {
+      "name" : "Tokelau",
+      "alpha2_code" : "TK",
+      "alpha3_code" : "TKL"
+	    }, {
+      "name" : "Tonga",
+      "alpha2_code" : "TO",
+      "alpha3_code" : "TON"
+	    }, {
+&      "name" : "Trinidad and Tobago",
+      "alpha2_code" : "TT",
+      "alpha3_code" : "TTO"
+	    }, {
+      "name" : "Tunisia",
+      "alpha2_code" : "TN",
+      "alpha3_code" : "TUN"
+	    }, {
+      "name" : "Turkey",
+      "alpha2_code" : "TR",
+      "alpha3_code" : "TUR"
+	    }, {
+      "name" : "Turkmenistan",
+      "alpha2_code" : "TM",
+      "alpha3_code" : "TKM"
+	    }, {
++      "name" : "Turks and Caicos Islands",
+      "alpha2_code" : "TC",
+      "alpha3_code" : "TCA"
+	    }, {
+      "name" : "Tuvalu",
+      "alpha2_code" : "TV",
+      "alpha3_code" : "TUV"
+	    }, {
+      "name" : "Uganda",
+      "alpha2_code" : "UG",
+      "alpha3_code" : "UGA"
+	    }, {
+      "name" : "Ukraine",
+      "alpha2_code" : "UA",
+      "alpha3_code" : "UKR"
+	    }, {
+'      "name" : "United Arab Emirates",
+      "alpha2_code" : "AE",
+      "alpha3_code" : "ARE"
+	    }, {
+G      "name" : "United Kingdom of Great Britain and Northern Ireland",
+      "alpha2_code" : "GB",
+      "alpha3_code" : "GBR"
+	    }, {
++      "name" : "United States of America",
+      "alpha2_code" : "US",
+      "alpha3_code" : "USA"
+	    }, {
+7      "name" : "United States Minor Outlying Islands",
+      "alpha2_code" : "UM",
+      "alpha3_code" : "UMI"
+	    }, {
+      "name" : "Uruguay",
+      "alpha2_code" : "UY",
+      "alpha3_code" : "URY"
+	    }, {
+      "name" : "Uzbekistan",
+      "alpha2_code" : "UZ",
+      "alpha3_code" : "UZB"
+	    }, {
+      "name" : "Vanuatu",
+      "alpha2_code" : "VU",
+      "alpha3_code" : "VUT"
+	    }, {
+5      "name" : "Venezuela (Bolivarian Republic of)",
+      "alpha2_code" : "VE",
+      "alpha3_code" : "VEN"
+	    }, {
+      "name" : "Viet Nam",
+      "alpha2_code" : "VN",
+      "alpha3_code" : "VNM"
+	    }, {
++      "name" : "Virgin Islands (British)",
+      "alpha2_code" : "VG",
+      "alpha3_code" : "VGB"
+	    }, {
+(      "name" : "Virgin Islands (U.S.)",
+      "alpha2_code" : "VI",
+      "alpha3_code" : "VIR"
+	    }, {
+$      "name" : "Wallis and Futuna",
+      "alpha2_code" : "WF",
+      "alpha3_code" : "WLF"
+	    }, {
+!      "name" : "Western Sahara",
+      "alpha2_code" : "EH",
+      "alpha3_code" : "ESH"
+	    }, {
+      "name" : "Yemen",
+      "alpha2_code" : "YE",
+      "alpha3_code" : "YEM"
+	    }, {
+      "name" : "Zambia",
+      "alpha2_code" : "ZM",
+      "alpha3_code" : "ZMB"
+	    }, {
+      "name" : "Zimbabwe",
+      "alpha2_code" : "ZW",
+      "alpha3_code" : "ZWE"
+    } ]
+  }
+}
+HTTP/1.1 200 200
+$Date: Fri, 20 Oct 2017 19:44:24 GMT
+Server: Apache/2.4.25 (Debian)
+ X-Content-Type-Options: nosniff
+ X-XSS-Protection: 1; mode=block
+>Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+-Content-Type: application/json;charset=UTF-8
+
+{
+    "RestResponse": {
+        "messages": [
+)            "Total [249] records found."
+        ],
+        "result": [
+            {
+'                "name": "Afghanistan",
+%                "alpha2_code": "AF",
+%                "alpha3_code": "AFG"
+            },
+            {
+*                "name": "??land Islands",
+%                "alpha2_code": "AX",
+%                "alpha3_code": "ALA"
+            },
+            {
+#                "name": "Albania",
+%                "alpha2_code": "AL",
+%                "alpha3_code": "ALB"
+            },
+            {
+#                "name": "Algeria",
+%                "alpha2_code": "DZ",
+%                "alpha3_code": "DZA"
+            },
+            {
+*                "name": "American Samoa",
+%                "alpha2_code": "AS",
+%                "alpha3_code": "ASM"
+            },
+            {
+#                "name": "Andorra",
+%                "alpha2_code": "AD",
+%                "alpha3_code": "AND"
+            },
+            {
+"                "name": "Angola",
+%                "alpha2_code": "AO",
+%                "alpha3_code": "AGO"
+            },
+            {
+$                "name": "Anguilla",
+%                "alpha2_code": "AI",
+%                "alpha3_code": "AIA"
+            },
+            {
+&                "name": "Antarctica",
+%                "alpha2_code": "AQ",
+%                "alpha3_code": "ATA"
+            },
+            {
+/                "name": "Antigua and Barbuda",
+%                "alpha2_code": "AG",
+%                "alpha3_code": "ATG"
+            },
+            {
+%                "name": "Argentina",
+%                "alpha2_code": "AR",
+%                "alpha3_code": "ARG"
+            },
+            {
+#                "name": "Armenia",
+%                "alpha2_code": "AM",
+%                "alpha3_code": "ARM"
+            },
+            {
+!                "name": "Aruba",
+%                "alpha2_code": "AW",
+%                "alpha3_code": "ABW"
+            },
+            {
+%                "name": "Australia",
+%                "alpha2_code": "AU",
+%                "alpha3_code": "AUS"
+            },
+            {
+#                "name": "Austria",
+%                "alpha2_code": "AT",
+%                "alpha3_code": "AUT"
+            },
+            {
+&                "name": "Azerbaijan",
+%                "alpha2_code": "AZ",
+%                "alpha3_code": "AZE"
+            },
+            {
+#                "name": "Bahamas",
+%                "alpha2_code": "BS",
+%                "alpha3_code": "BHS"
+            },
+            {
+#                "name": "Bahrain",
+%                "alpha2_code": "BH",
+%                "alpha3_code": "BHR"
+            },
+            {
+&                "name": "Bangladesh",
+%                "alpha2_code": "BD",
+%                "alpha3_code": "BGD"
+            },
+            {
+$                "name": "Barbados",
+%                "alpha2_code": "BB",
+%                "alpha3_code": "BRB"
+            },
+            {
+#                "name": "Belarus",
+%                "alpha2_code": "BY",
+%                "alpha3_code": "BLR"
+            },
+            {
+#                "name": "Belgium",
+%                "alpha2_code": "BE",
+%                "alpha3_code": "BEL"
+            },
+            {
+"                "name": "Belize",
+%                "alpha2_code": "BZ",
+%                "alpha3_code": "BLZ"
+            },
+            {
+!                "name": "Benin",
+%                "alpha2_code": "BJ",
+%                "alpha3_code": "BEN"
+            },
+            {
+#                "name": "Bermuda",
+%                "alpha2_code": "BM",
+%                "alpha3_code": "BMU"
+            },
+            {
+"                "name": "Bhutan",
+%                "alpha2_code": "BT",
+%                "alpha3_code": "BTN"
+            },
+            {
+<                "name": "Bolivia (Plurinational State of)",
+%                "alpha2_code": "BO",
+%                "alpha3_code": "BOL"
+            },
+            {
+<                "name": "Bonaire, Sint Eustatius and Saba",
+%                "alpha2_code": "BQ",
+%                "alpha3_code": "BES"
+            },
+            {
+2                "name": "Bosnia and Herzegovina",
+%                "alpha2_code": "BA",
+%                "alpha3_code": "BIH"
+            },
+            {
+$                "name": "Botswana",
+%                "alpha2_code": "BW",
+%                "alpha3_code": "BWA"
+            },
+            {
+)                "name": "Bouvet Island",
+%                "alpha2_code": "BV",
+%                "alpha3_code": "BVT"
+            },
+            {
+"                "name": "Brazil",
+%                "alpha2_code": "BR",
+%                "alpha3_code": "BRA"
+            },
+            {
+:                "name": "British Indian Ocean Territory",
+%                "alpha2_code": "IO",
+%                "alpha3_code": "IOT"
+            },
+            {
+-                "name": "Brunei Darussalam",
+%                "alpha2_code": "BN",
+%                "alpha3_code": "BRN"
+            },
+            {
+$                "name": "Bulgaria",
+%                "alpha2_code": "BG",
+%                "alpha3_code": "BGR"
+            },
+            {
+(                "name": "Burkina Faso",
+%                "alpha2_code": "BF",
+%                "alpha3_code": "BFA"
+            },
+            {
+#                "name": "Burundi",
+%                "alpha2_code": "BI",
+%                "alpha3_code": "BDI"
+            },
+            {
+&                "name": "Cabo Verde",
+%                "alpha2_code": "CV",
+%                "alpha3_code": "CPV"
+            },
+            {
+$                "name": "Cambodia",
+%                "alpha2_code": "KH",
+%                "alpha3_code": "KHM"
+            },
+            {
+$                "name": "Cameroon",
+%                "alpha2_code": "CM",
+%                "alpha3_code": "CMR"
+            },
+            {
+"                "name": "Canada",
+%                "alpha2_code": "CA",
+%                "alpha3_code": "CAN"
+            },
+            {
+*                "name": "Cayman Islands",
+%                "alpha2_code": "KY",
+%                "alpha3_code": "CYM"
+            },
+            {
+4                "name": "Central African Republic",
+%                "alpha2_code": "CF",
+%                "alpha3_code": "CAF"
+            },
+            {
+                 "name": "Chad",
+%                "alpha2_code": "TD",
+%                "alpha3_code": "TCD"
+            },
+            {
+!                "name": "Chile",
+%                "alpha2_code": "CL",
+%                "alpha3_code": "CHL"
+            },
+            {
+!                "name": "China",
+%                "alpha2_code": "CN",
+%                "alpha3_code": "CHN"
+            },
+            {
+,                "name": "Christmas Island",
+%                "alpha2_code": "CX",
+%                "alpha3_code": "CXR"
+            },
+            {
+3                "name": "Cocos (Keeling) Islands",
+%                "alpha2_code": "CC",
+%                "alpha3_code": "CCK"
+            },
+            {
+$                "name": "Colombia",
+%                "alpha2_code": "CO",
+%                "alpha3_code": "COL"
+            },
+            {
+#                "name": "Comoros",
+%                "alpha2_code": "KM",
+%                "alpha3_code": "COM"
+            },
+            {
+!                "name": "Congo",
+%                "alpha2_code": "CG",
+%                "alpha3_code": "COG"
+            },
+            {
+>                "name": "Congo (Democratic Republic of the)",
+%                "alpha2_code": "CD",
+%                "alpha3_code": "COD"
+            },
+            {
+(                "name": "Cook Islands",
+%                "alpha2_code": "CK",
+%                "alpha3_code": "COK"
+            },
+            {
+&                "name": "Costa Rica",
+%                "alpha2_code": "CR",
+%                "alpha3_code": "CRI"
+            },
+            {
+*                "name": "C??te d'Ivoire",
+%                "alpha2_code": "CI",
+%                "alpha3_code": "CIV"
+            },
+            {
+#                "name": "Croatia",
+%                "alpha2_code": "HR",
+%                "alpha3_code": "HRV"
+            },
+            {
+                 "name": "Cuba",
+%                "alpha2_code": "CU",
+%                "alpha3_code": "CUB"
+            },
+            {
+$                "name": "Cura??ao",
+%                "alpha2_code": "CW",
+%                "alpha3_code": "CUW"
+            },
+            {
+"                "name": "Cyprus",
+%                "alpha2_code": "CY",
+%                "alpha3_code": "CYP"
+            },
+            {
+#                "name": "Czechia",
+%                "alpha2_code": "CZ",
+%                "alpha3_code": "CZE"
+            },
+            {
+#                "name": "Denmark",
+%                "alpha2_code": "DK",
+%                "alpha3_code": "DNK"
+            },
+            {
+$                "name": "Djibouti",
+%                "alpha2_code": "DJ",
+%                "alpha3_code": "DJI"
+            },
+            {
+$                "name": "Dominica",
+%                "alpha2_code": "DM",
+%                "alpha3_code": "DMA"
+            },
+            {
+.                "name": "Dominican Republic",
+%                "alpha2_code": "DO",
+%                "alpha3_code": "DOM"
+            },
+            {
+#                "name": "Ecuador",
+%                "alpha2_code": "EC",
+%                "alpha3_code": "ECU"
+            },
+            {
+!                "name": "Egypt",
+%                "alpha2_code": "EG",
+%                "alpha3_code": "EGY"
+            },
+            {
+'                "name": "El Salvador",
+%                "alpha2_code": "SV",
+%                "alpha3_code": "SLV"
+            },
+            {
+-                "name": "Equatorial Guinea",
+%                "alpha2_code": "GQ",
+%                "alpha3_code": "GNQ"
+            },
+            {
+#                "name": "Eritrea",
+%                "alpha2_code": "ER",
+%                "alpha3_code": "ERI"
+            },
+            {
+#                "name": "Estonia",
+%                "alpha2_code": "EE",
+%                "alpha3_code": "EST"
+            },
+            {
+$                "name": "Ethiopia",
+%                "alpha2_code": "ET",
+%                "alpha3_code": "ETH"
+            },
+            {
+7                "name": "Falkland Islands (Malvinas)",
+%                "alpha2_code": "FK",
+%                "alpha3_code": "FLK"
+            },
+            {
+)                "name": "Faroe Islands",
+%                "alpha2_code": "FO",
+%                "alpha3_code": "FRO"
+            },
+            {
+                 "name": "Fiji",
+%                "alpha2_code": "FJ",
+%                "alpha3_code": "FJI"
+            },
+            {
+#                "name": "Finland",
+%                "alpha2_code": "FI",
+%                "alpha3_code": "FIN"
+            },
+            {
+"                "name": "France",
+%                "alpha2_code": "FR",
+%                "alpha3_code": "FRA"
+            },
+            {
+)                "name": "French Guiana",
+%                "alpha2_code": "GF",
+%                "alpha3_code": "GUF"
+            },
+            {
+,                "name": "French Polynesia",
+%                "alpha2_code": "PF",
+%                "alpha3_code": "PYF"
+            },
+            {
+7                "name": "French Southern Territories",
+%                "alpha2_code": "TF",
+%                "alpha3_code": "ATF"
+            },
+            {
+!                "name": "Gabon",
+%                "alpha2_code": "GA",
+%                "alpha3_code": "GAB"
+            },
+            {
+"                "name": "Gambia",
+%                "alpha2_code": "GM",
+%                "alpha3_code": "GMB"
+            },
+            {
+#                "name": "Georgia",
+%                "alpha2_code": "GE",
+%                "alpha3_code": "GEO"
+            },
+            {
+#                "name": "Germany",
+%                "alpha2_code": "DE",
+%                "alpha3_code": "DEU"
+            },
+            {
+!                "name": "Ghana",
+%                "alpha2_code": "GH",
+%                "alpha3_code": "GHA"
+            },
+            {
+%                "name": "Gibraltar",
+%                "alpha2_code": "GI",
+%                "alpha3_code": "GIB"
+            },
+            {
+"                "name": "Greece",
+%                "alpha2_code": "GR",
+%                "alpha3_code": "GRC"
+            },
+            {
+%                "name": "Greenland",
+%                "alpha2_code": "GL",
+%                "alpha3_code": "GRL"
+            },
+            {
+#                "name": "Grenada",
+%                "alpha2_code": "GD",
+%                "alpha3_code": "GRD"
+            },
+            {
+&                "name": "Guadeloupe",
+%                "alpha2_code": "GP",
+%                "alpha3_code": "GLP"
+            },
+            {
+                 "name": "Guam",
+%                "alpha2_code": "GU",
+%                "alpha3_code": "GUM"
+            },
+            {
+%                "name": "Guatemala",
+%                "alpha2_code": "GT",
+%                "alpha3_code": "GTM"
+            },
+            {
+$                "name": "Guernsey",
+%                "alpha2_code": "GG",
+%                "alpha3_code": "GGY"
+            },
+            {
+"                "name": "Guinea",
+%                "alpha2_code": "GN",
+%                "alpha3_code": "GIN"
+            },
+            {
+)                "name": "Guinea-Bissau",
+%                "alpha2_code": "GW",
+%                "alpha3_code": "GNB"
+            },
+            {
+"                "name": "Guyana",
+%                "alpha2_code": "GY",
+%                "alpha3_code": "GUY"
+            },
+            {
+!                "name": "Haiti",
+%                "alpha2_code": "HT",
+%                "alpha3_code": "HTI"
+            },
+            {
+=                "name": "Heard Island and McDonald Islands",
+%                "alpha2_code": "HM",
+%                "alpha3_code": "HMD"
+            },
+            {
+$                "name": "Holy See",
+%                "alpha2_code": "VA",
+%                "alpha3_code": "VAT"
+            },
+            {
+$                "name": "Honduras",
+%                "alpha2_code": "HN",
+%                "alpha3_code": "HND"
+            },
+            {
+%                "name": "Hong Kong",
+%                "alpha2_code": "HK",
+%                "alpha3_code": "HKG"
+            },
+            {
+#                "name": "Hungary",
+%                "alpha2_code": "HU",
+%                "alpha3_code": "HUN"
+            },
+            {
+#                "name": "Iceland",
+%                "alpha2_code": "IS",
+%                "alpha3_code": "ISL"
+            },
+            {
+!                "name": "India",
+%                "alpha2_code": "IN",
+%                "alpha3_code": "IND"
+            },
+            {
+%                "name": "Indonesia",
+%                "alpha2_code": "ID",
+%                "alpha3_code": "IDN"
+            },
+            {
+6                "name": "Iran (Islamic Republic of)",
+%                "alpha2_code": "IR",
+%                "alpha3_code": "IRN"
+            },
+            {
+                 "name": "Iraq",
+%                "alpha2_code": "IQ",
+%                "alpha3_code": "IRQ"
+            },
+            {
+#                "name": "Ireland",
+%                "alpha2_code": "IE",
+%                "alpha3_code": "IRL"
+            },
+            {
+'                "name": "Isle of Man",
+%                "alpha2_code": "IM",
+%                "alpha3_code": "IMN"
+            },
+            {
+"                "name": "Israel",
+%                "alpha2_code": "IL",
+%                "alpha3_code": "ISR"
+            },
+            {
+!                "name": "Italy",
+%                "alpha2_code": "IT",
+%                "alpha3_code": "ITA"
+            },
+            {
+#                "name": "Jamaica",
+%                "alpha2_code": "JM",
+%                "alpha3_code": "JAM"
+            },
+            {
+!                "name": "Japan",
+%                "alpha2_code": "JP",
+%                "alpha3_code": "JPN"
+            },
+            {
+"                "name": "Jersey",
+%                "alpha2_code": "JE",
+%                "alpha3_code": "JEY"
+            },
+            {
+"                "name": "Jordan",
+%                "alpha2_code": "JO",
+%                "alpha3_code": "JOR"
+            },
+            {
+&                "name": "Kazakhstan",
+%                "alpha2_code": "KZ",
+%                "alpha3_code": "KAZ"
+            },
+            {
+!                "name": "Kenya",
+%                "alpha2_code": "KE",
+%                "alpha3_code": "KEN"
+            },
+            {
+$                "name": "Kiribati",
+%                "alpha2_code": "KI",
+%                "alpha3_code": "KIR"
+            },
+            {
+C                "name": "Korea (Democratic People's Republic of)",
+%                "alpha2_code": "KP",
+%                "alpha3_code": "PRK"
+            },
+            {
+/                "name": "Korea (Republic of)",
+%                "alpha2_code": "KR",
+%                "alpha3_code": "KOR"
+            },
+            {
+"                "name": "Kuwait",
+%                "alpha2_code": "KW",
+%                "alpha3_code": "KWT"
+            },
+            {
+&                "name": "Kyrgyzstan",
+%                "alpha2_code": "KG",
+%                "alpha3_code": "KGZ"
+            },
+            {
+<                "name": "Lao People's Democratic Republic",
+%                "alpha2_code": "LA",
+%                "alpha3_code": "LAO"
+            },
+            {
+"                "name": "Latvia",
+%                "alpha2_code": "LV",
+%                "alpha3_code": "LVA"
+            },
+            {
+#                "name": "Lebanon",
+%                "alpha2_code": "LB",
+%                "alpha3_code": "LBN"
+            },
+            {
+#                "name": "Lesotho",
+%                "alpha2_code": "LS",
+%                "alpha3_code": "LSO"
+            },
+            {
+#                "name": "Liberia",
+%                "alpha2_code": "LR",
+%                "alpha3_code": "LBR"
+            },
+            {
+!                "name": "Libya",
+%                "alpha2_code": "LY",
+%                "alpha3_code": "LBY"
+            },
+            {
+)                "name": "Liechtenstein",
+%                "alpha2_code": "LI",
+%                "alpha3_code": "LIE"
+            },
+            {
+%                "name": "Lithuania",
+%                "alpha2_code": "LT",
+%                "alpha3_code": "LTU"
+            },
+            {
+&                "name": "Luxembourg",
+%                "alpha2_code": "LU",
+%                "alpha3_code": "LUX"
+            },
+            {
+!                "name": "Macao",
+%                "alpha2_code": "MO",
+%                "alpha3_code": "MAC"
+            },
+            {
+G                "name": "Macedonia (the former Yugoslav Republic of)",
+%                "alpha2_code": "MK",
+%                "alpha3_code": "MKD"
+            },
+            {
+&                "name": "Madagascar",
+%                "alpha2_code": "MG",
+%                "alpha3_code": "MDG"
+            },
+            {
+"                "name": "Malawi",
+%                "alpha2_code": "MW",
+%                "alpha3_code": "MWI"
+            },
+            {
+$                "name": "Malaysia",
+%                "alpha2_code": "MY",
+%                "alpha3_code": "MYS"
+            },
+            {
+$                "name": "Maldives",
+%                "alpha2_code": "MV",
+%                "alpha3_code": "MDV"
+            },
+            {
+                 "name": "Mali",
+%                "alpha2_code": "ML",
+%                "alpha3_code": "MLI"
+            },
+            {
+!                "name": "Malta",
+%                "alpha2_code": "MT",
+%                "alpha3_code": "MLT"
+            },
+            {
+,                "name": "Marshall Islands",
+%                "alpha2_code": "MH",
+%                "alpha3_code": "MHL"
+            },
+            {
+&                "name": "Martinique",
+%                "alpha2_code": "MQ",
+%                "alpha3_code": "MTQ"
+            },
+            {
+&                "name": "Mauritania",
+%                "alpha2_code": "MR",
+%                "alpha3_code": "MRT"
+            },
+            {
+%                "name": "Mauritius",
+%                "alpha2_code": "MU",
+%                "alpha3_code": "MUS"
+            },
+            {
+#                "name": "Mayotte",
+%                "alpha2_code": "YT",
+%                "alpha3_code": "MYT"
+            },
+            {
+"                "name": "Mexico",
+%                "alpha2_code": "MX",
+%                "alpha3_code": "MEX"
+            },
+            {
+<                "name": "Micronesia (Federated States of)",
+%                "alpha2_code": "FM",
+%                "alpha3_code": "FSM"
+            },
+            {
+1                "name": "Moldova (Republic of)",
+%                "alpha2_code": "MD",
+%                "alpha3_code": "MDA"
+            },
+            {
+"                "name": "Monaco",
+%                "alpha2_code": "MC",
+%                "alpha3_code": "MCO"
+            },
+            {
+$                "name": "Mongolia",
+%                "alpha2_code": "MN",
+%                "alpha3_code": "MNG"
+            },
+            {
+&                "name": "Montenegro",
+%                "alpha2_code": "ME",
+%                "alpha3_code": "MNE"
+            },
+            {
+&                "name": "Montserrat",
+%                "alpha2_code": "MS",
+%                "alpha3_code": "MSR"
+            },
+            {
+#                "name": "Morocco",
+%                "alpha2_code": "MA",
+%                "alpha3_code": "MAR"
+            },
+            {
+&                "name": "Mozambique",
+%                "alpha2_code": "MZ",
+%                "alpha3_code": "MOZ"
+            },
+            {
+#                "name": "Myanmar",
+%                "alpha2_code": "MM",
+%                "alpha3_code": "MMR"
+            },
+            {
+#                "name": "Namibia",
+%                "alpha2_code": "NA",
+%                "alpha3_code": "NAM"
+            },
+            {
+!                "name": "Nauru",
+%                "alpha2_code": "NR",
+%                "alpha3_code": "NRU"
+            },
+            {
+!                "name": "Nepal",
+%                "alpha2_code": "NP",
+%                "alpha3_code": "NPL"
+            },
+            {
+'                "name": "Netherlands",
+%                "alpha2_code": "NL",
+%                "alpha3_code": "NLD"
+            },
+            {
+)                "name": "New Caledonia",
+%                "alpha2_code": "NC",
+%                "alpha3_code": "NCL"
+            },
+            {
+'                "name": "New Zealand",
+%                "alpha2_code": "NZ",
+%                "alpha3_code": "NZL"
+            },
+            {
+%                "name": "Nicaragua",
+%                "alpha2_code": "NI",
+%                "alpha3_code": "NIC"
+            },
+            {
+!                "name": "Niger",
+%                "alpha2_code": "NE",
+%                "alpha3_code": "NER"
+            },
+            {
+#                "name": "Nigeria",
+%                "alpha2_code": "NG",
+%                "alpha3_code": "NGA"
+            },
+            {
+                 "name": "Niue",
+%                "alpha2_code": "NU",
+%                "alpha3_code": "NIU"
+            },
+            {
+*                "name": "Norfolk Island",
+%                "alpha2_code": "NF",
+%                "alpha3_code": "NFK"
+            },
+            {
+4                "name": "Northern Mariana Islands",
+%                "alpha2_code": "MP",
+%                "alpha3_code": "MNP"
+            },
+            {
+"                "name": "Norway",
+%                "alpha2_code": "NO",
+%                "alpha3_code": "NOR"
+            },
+            {
+                 "name": "Oman",
+%                "alpha2_code": "OM",
+%                "alpha3_code": "OMN"
+            },
+            {
+$                "name": "Pakistan",
+%                "alpha2_code": "PK",
+%                "alpha3_code": "PAK"
+            },
+            {
+!                "name": "Palau",
+%                "alpha2_code": "PW",
+%                "alpha3_code": "PLW"
+            },
+            {
+/                "name": "Palestine, State of",
+%                "alpha2_code": "PS",
+%                "alpha3_code": "PSE"
+            },
+            {
+"                "name": "Panama",
+%                "alpha2_code": "PA",
+%                "alpha3_code": "PAN"
+            },
+            {
+,                "name": "Papua New Guinea",
+%                "alpha2_code": "PG",
+%                "alpha3_code": "PNG"
+            },
+            {
+$                "name": "Paraguay",
+%                "alpha2_code": "PY",
+%                "alpha3_code": "PRY"
+            },
+            {
+                 "name": "Peru",
+%                "alpha2_code": "PE",
+%                "alpha3_code": "PER"
+            },
+            {
+'                "name": "Philippines",
+%                "alpha2_code": "PH",
+%                "alpha3_code": "PHL"
+            },
+            {
+$                "name": "Pitcairn",
+%                "alpha2_code": "PN",
+%                "alpha3_code": "PCN"
+            },
+            {
+"                "name": "Poland",
+%                "alpha2_code": "PL",
+%                "alpha3_code": "POL"
+            },
+            {
+$                "name": "Portugal",
+%                "alpha2_code": "PT",
+%                "alpha3_code": "PRT"
+            },
+            {
+'                "name": "Puerto Rico",
+%                "alpha2_code": "PR",
+%                "alpha3_code": "PRI"
+            },
+            {
+!                "name": "Qatar",
+%                "alpha2_code": "QA",
+%                "alpha3_code": "QAT"
+            },
+            {
+$                "name": "R??union",
+%                "alpha2_code": "RE",
+%                "alpha3_code": "REU"
+            },
+            {
+#                "name": "Romania",
+%                "alpha2_code": "RO",
+%                "alpha3_code": "ROU"
+            },
+            {
+.                "name": "Russian Federation",
+%                "alpha2_code": "RU",
+%                "alpha3_code": "RUS"
+            },
+            {
+"                "name": "Rwanda",
+%                "alpha2_code": "RW",
+%                "alpha3_code": "RWA"
+            },
+            {
+-                "name": "Saint Barth??lemy",
+%                "alpha2_code": "BL",
+%                "alpha3_code": "BLM"
+            },
+            {
+H                "name": "Saint Helena, Ascension and Tristan da Cunha",
+%                "alpha2_code": "SH",
+%                "alpha3_code": "SHN"
+            },
+            {
+1                "name": "Saint Kitts and Nevis",
+%                "alpha2_code": "KN",
+%                "alpha3_code": "KNA"
+            },
+            {
+'                "name": "Saint Lucia",
+%                "alpha2_code": "LC",
+%                "alpha3_code": "LCA"
+            },
+            {
+6                "name": "Saint Martin (French part)",
+%                "alpha2_code": "MF",
+%                "alpha3_code": "MAF"
+            },
+            {
+5                "name": "Saint Pierre and Miquelon",
+%                "alpha2_code": "PM",
+%                "alpha3_code": "SPM"
+            },
+            {
+<                "name": "Saint Vincent and the Grenadines",
+%                "alpha2_code": "VC",
+%                "alpha3_code": "VCT"
+            },
+            {
+!                "name": "Samoa",
+%                "alpha2_code": "WS",
+%                "alpha3_code": "WSM"
+            },
+            {
+&                "name": "San Marino",
+%                "alpha2_code": "SM",
+%                "alpha3_code": "SMR"
+            },
+            {
+1                "name": "Sao Tome and Principe",
+%                "alpha2_code": "ST",
+%                "alpha3_code": "STP"
+            },
+            {
+(                "name": "Saudi Arabia",
+%                "alpha2_code": "SA",
+%                "alpha3_code": "SAU"
+            },
+            {
+#                "name": "Senegal",
+%                "alpha2_code": "SN",
+%                "alpha3_code": "SEN"
+            },
+            {
+"                "name": "Serbia",
+%                "alpha2_code": "RS",
+%                "alpha3_code": "SRB"
+            },
+            {
+&                "name": "Seychelles",
+%                "alpha2_code": "SC",
+%                "alpha3_code": "SYC"
+            },
+            {
+(                "name": "Sierra Leone",
+%                "alpha2_code": "SL",
+%                "alpha3_code": "SLE"
+            },
+            {
+%                "name": "Singapore",
+%                "alpha2_code": "SG",
+%                "alpha3_code": "SGP"
+            },
+            {
+5                "name": "Sint Maarten (Dutch part)",
+%                "alpha2_code": "SX",
+%                "alpha3_code": "SXM"
+            },
+            {
+$                "name": "Slovakia",
+%                "alpha2_code": "SK",
+%                "alpha3_code": "SVK"
+            },
+            {
+$                "name": "Slovenia",
+%                "alpha2_code": "SI",
+%                "alpha3_code": "SVN"
+            },
+            {
++                "name": "Solomon Islands",
+%                "alpha2_code": "SB",
+%                "alpha3_code": "SLB"
+            },
+            {
+#                "name": "Somalia",
+%                "alpha2_code": "SO",
+%                "alpha3_code": "SOM"
+            },
+            {
+(                "name": "South Africa",
+%                "alpha2_code": "ZA",
+%                "alpha3_code": "ZAF"
+            },
+            {
+H                "name": "South Georgia and the South Sandwich Islands",
+%                "alpha2_code": "GS",
+%                "alpha3_code": "SGS"
+            },
+            {
+'                "name": "South Sudan",
+%                "alpha2_code": "SS",
+%                "alpha3_code": "SSD"
+            },
+            {
+!                "name": "Spain",
+%                "alpha2_code": "ES",
+%                "alpha3_code": "ESP"
+            },
+            {
+%                "name": "Sri Lanka",
+%                "alpha2_code": "LK",
+%                "alpha3_code": "LKA"
+            },
+            {
+!                "name": "Sudan",
+%                "alpha2_code": "SD",
+%                "alpha3_code": "SDN"
+            },
+            {
+$                "name": "Suriname",
+%                "alpha2_code": "SR",
+%                "alpha3_code": "SUR"
+            },
+            {
+2                "name": "Svalbard and Jan Mayen",
+%                "alpha2_code": "SJ",
+%                "alpha3_code": "SJM"
+            },
+            {
+%                "name": "Swaziland",
+%                "alpha2_code": "SZ",
+%                "alpha3_code": "SWZ"
+            },
+            {
+"                "name": "Sweden",
+%                "alpha2_code": "SE",
+%                "alpha3_code": "SWE"
+            },
+            {
+'                "name": "Switzerland",
+%                "alpha2_code": "CH",
+%                "alpha3_code": "CHE"
+            },
+            {
+0                "name": "Syrian Arab Republic",
+%                "alpha2_code": "SY",
+%                "alpha3_code": "SYR"
+            },
+            {
+9                "name": "Taiwan, Province of China [a]",
+%                "alpha2_code": "TW",
+%                "alpha3_code": "TWN"
+            },
+            {
+&                "name": "Tajikistan",
+%                "alpha2_code": "TJ",
+%                "alpha3_code": "TJK"
+            },
+            {
+8                "name": "Tanzania, United Republic of",
+%                "alpha2_code": "TZ",
+%                "alpha3_code": "TZA"
+            },
+            {
+$                "name": "Thailand",
+%                "alpha2_code": "TH",
+%                "alpha3_code": "THA"
+            },
+            {
+'                "name": "Timor-Leste",
+%                "alpha2_code": "TL",
+%                "alpha3_code": "TLS"
+            },
+            {
+                 "name": "Togo",
+%                "alpha2_code": "TG",
+%                "alpha3_code": "TGO"
+            },
+            {
+#                "name": "Tokelau",
+%                "alpha2_code": "TK",
+%                "alpha3_code": "TKL"
+            },
+            {
+!                "name": "Tonga",
+%                "alpha2_code": "TO",
+%                "alpha3_code": "TON"
+            },
+            {
+/                "name": "Trinidad and Tobago",
+%                "alpha2_code": "TT",
+%                "alpha3_code": "TTO"
+            },
+            {
+#                "name": "Tunisia",
+%                "alpha2_code": "TN",
+%                "alpha3_code": "TUN"
+            },
+            {
+"                "name": "Turkey",
+%                "alpha2_code": "TR",
+%                "alpha3_code": "TUR"
+            },
+            {
+(                "name": "Turkmenistan",
+%                "alpha2_code": "TM",
+%                "alpha3_code": "TKM"
+            },
+            {
+4                "name": "Turks and Caicos Islands",
+%                "alpha2_code": "TC",
+%                "alpha3_code": "TCA"
+            },
+            {
+"                "name": "Tuvalu",
+%                "alpha2_code": "TV",
+%                "alpha3_code": "TUV"
+            },
+            {
+"                "name": "Uganda",
+%                "alpha2_code": "UG",
+%                "alpha3_code": "UGA"
+            },
+            {
+#                "name": "Ukraine",
+%                "alpha2_code": "UA",
+%                "alpha3_code": "UKR"
+            },
+            {
+0                "name": "United Arab Emirates",
+%                "alpha2_code": "AE",
+%                "alpha3_code": "ARE"
+            },
+            {
+P                "name": "United Kingdom of Great Britain and Northern Ireland",
+%                "alpha2_code": "GB",
+%                "alpha3_code": "GBR"
+            },
+            {
+4                "name": "United States of America",
+%                "alpha2_code": "US",
+%                "alpha3_code": "USA"
+            },
+            {
+@                "name": "United States Minor Outlying Islands",
+%                "alpha2_code": "UM",
+%                "alpha3_code": "UMI"
+            },
+            {
+#                "name": "Uruguay",
+%                "alpha2_code": "UY",
+%                "alpha3_code": "URY"
+            },
+            {
+&                "name": "Uzbekistan",
+%                "alpha2_code": "UZ",
+%                "alpha3_code": "UZB"
+            },
+            {
+#                "name": "Vanuatu",
+%                "alpha2_code": "VU",
+%                "alpha3_code": "VUT"
+            },
+            {
+>                "name": "Venezuela (Bolivarian Republic of)",
+%                "alpha2_code": "VE",
+%                "alpha3_code": "VEN"
+            },
+            {
+$                "name": "Viet Nam",
+%                "alpha2_code": "VN",
+%                "alpha3_code": "VNM"
+            },
+            {
+4                "name": "Virgin Islands (British)",
+%                "alpha2_code": "VG",
+%                "alpha3_code": "VGB"
+            },
+            {
+1                "name": "Virgin Islands (U.S.)",
+%                "alpha2_code": "VI",
+%                "alpha3_code": "VIR"
+            },
+            {
+-                "name": "Wallis and Futuna",
+%                "alpha2_code": "WF",
+%                "alpha3_code": "WLF"
+            },
+            {
+*                "name": "Western Sahara",
+%                "alpha2_code": "EH",
+%                "alpha3_code": "ESH"
+            },
+            {
+!                "name": "Yemen",
+%                "alpha2_code": "YE",
+%                "alpha3_code": "YEM"
+            },
+            {
+"                "name": "Zambia",
+%                "alpha2_code": "ZM",
+%                "alpha3_code": "ZMB"
+            },
+            {
+$                "name": "Zimbabwe",
+%                "alpha2_code": "ZW",
+%                "alpha3_code": "ZWE"
+            }
+
+        ]
+    }
+}
+
+Output data is: 
+
+{
+
+   "predictions" : [
+
+      {
+
+*         "description" : "Paris, France",
+
+<         "id" : "691b237b0322f28988f3ce03e321ff72a12167fd",
+
+"         "matched_substrings" : [
+
+            {
+
+               "length" : 5,
+
+               "offset" : 0
+
+            }
+
+         ],
+
+5         "place_id" : "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+
+™         "reference" : "CjQlAAAAcOEU-xG2CdT7pMQ07SIpByFU3fdfL5L5kpwQa2DSFGQNGF9GjpSzki0HNcvzRB8lEhDdsuahpwlzsl5YBmxzoRuoGhRPpOSHqdbsi9BM9mn1fbXCyszu-w",
+
+%         "structured_formatting" : {
+
+#            "main_text" : "Paris",
+
+/            "main_text_matched_substrings" : [
+
+               {
+
+                   "length" : 5,
+
+                  "offset" : 0
+
+               }
+
+            ],
+
+(            "secondary_text" : "France"
+
+         },
+
+         "terms" : [
+
+            {
+
+               "offset" : 0,
+
+!               "value" : "Paris"
+
+            },
+
+            {
+
+               "offset" : 7,
+
+"               "value" : "France"
+
+            }
+
+         ],
+
+:         "types" : [ "locality", "political", "geocode" ]
+
+	      },
+
+      {
+
+5         "description" : "Paris, TX, United States",
+
+<         "id" : "518e47f3d7f39277eb3bc895cb84419c2b43b5ac",
+
+"         "matched_substrings" : [
+
+            {
+
+               "length" : 5,
+
+               "offset" : 0
+
+            }
+
+         ],
+
+5         "place_id" : "ChIJmysnFgZYSoYRSfPTL2YJuck",
+
+™         "reference" : "CjQwAAAAqvdh6TJ7gijp_iLVNfSBOXhzqLh7oxGl8iPGy9PsqB-MgU2uAuKrYVbX9FXhIYprEhDxDCFSDz00Md9aqamJeMpRGhR1ygHJkphIT-Nm8SaGVxAjsvOQ3w",
+
+%         "structured_formatting" : {
+
+#            "main_text" : "Paris",
+
+/            "main_text_matched_substrings" : [
+
+               {
+
+                   "length" : 5,
+
+                  "offset" : 0
+
+               }
+
+            ],
+
+3            "secondary_text" : "TX, United States"
+
+         },
+
+         "terms" : [
+
+            {
+
+               "offset" : 0,
+
+!               "value" : "Paris"
+
+            },
+
+            {
+
+               "offset" : 7,
+
+               "value" : "TX"
+
+            },
+
+            {
+
+               "offset" : 11,
+
+)               "value" : "United States"
+
+            }
+
+         ],
+
+:         "types" : [ "locality", "political", "geocode" ]
+
+	      },
+
+      {
+
+5         "description" : "Paris, TN, United States",
+
+<         "id" : "9093091daae9a06a3695203bd8e68a2defef674b",
+
+"         "matched_substrings" : [
+
+            {
+
+               "length" : 5,
+
+               "offset" : 0
+
+            }
+
+         ],
+
+5         "place_id" : "ChIJ4zHP-Sije4gRBDEsVxunOWg",
+
+™         "reference" : "CjQwAAAAYt_kiUNapWiUkwV2uS3igVXcPM4mIGoMISUR2kVdbDS6LzESYsXBrzcDUmFUEp5yEhCMxSj5ZHFXpQRppj__x2TbGhSz2AsrW4GwdHYb4G9wanCpe568RA",
+
+%         "structured_formatting" : {
+
+#            "main_text" : "Paris",
+
+/            "main_text_matched_substrings" : [
+
+               {
+
+                   "length" : 5,
+
+                  "offset" : 0
+
+               }
+
+            ],
+
+3            "secondary_text" : "TN, United States"
+
+         },
+
+         "terms" : [
+
+            {
+
+               "offset" : 0,
+
+!               "value" : "Paris"
+
+            },
+
+            {
+
+               "offset" : 7,
+
+               "value" : "TN"
+
+            },
+
+            {
+
+               "offset" : 11,
+
+)               "value" : "United States"
+
+            }
+
+         ],
+
+:         "types" : [ "locality", "political", "geocode" ]
+
+	      },
+
+      {
+
+5         "description" : "Paris, KY, United States",
+
+<         "id" : "e2522e18d49652387de0a8c030b09ed9fb3251b8",
+
+"         "matched_substrings" : [
+
+            {
+
+               "length" : 5,
+
+               "offset" : 0
+
+            }
+
+         ],
+
+5         "place_id" : "ChIJsU7_xMfKQ4gReI89RJn0-RQ",
+
+™         "reference" : "CjQwAAAA9tWsYw-KneKAQ9-6uAU1PjBW_gVZ29iqjbH6UoeosyA1C3I5bERdmiE5zrWflzHBEhDvmS69rBA5GmzV3N8jQAMcGhQtCp2SimwAb4yaVQVG_xoQDhe1mw",
+
+%         "structured_formatting" : {
+
+#            "main_text" : "Paris",
+
+/            "main_text_matched_substrings" : [
+
+               {
+
+                   "length" : 5,
+
+                  "offset" : 0
+
+               }
+
+            ],
+
+3            "secondary_text" : "KY, United States"
+
+         },
+
+         "terms" : [
+
+            {
+
+               "offset" : 0,
+
+!               "value" : "Paris"
+
+            },
+
+            {
+
+               "offset" : 7,
+
+               "value" : "KY"
+
+            },
+
+            {
+
+               "offset" : 11,
+
+)               "value" : "United States"
+
+            }
+
+         ],
+
+:         "types" : [ "locality", "political", "geocode" ]
+
+	      },
+
+      {
+
+5         "description" : "Paris, IL, United States",
+
+<         "id" : "9f7cdc811ad60d1d92b51fcc314e14546551ec5e",
+
+"         "matched_substrings" : [
+
+            {
+
+               "length" : 5,
+
+               "offset" : 0
+
+            }
+
+         ],
+
+5         "place_id" : "ChIJO5XGnIyXcogRT-7Ymxr9xgo",
+
+™         "reference" : "CjQwAAAApc5_SeAkZR5Zips1T77aHHyS_5EpvWES21Fn0cZ5wuJ9fjz8fIsqy612yNzDybiAEhDTQwNukIoQPq9R8GM1X6hRGhTVSl5LXyeorVRBaVR_ChtTeFrCog",
+
+%         "structured_formatting" : {
+
+#            "main_text" : "Paris",
+
+/            "main_text_matched_substrings" : [
+
+               {
+
+                   "length" : 5,
+
+                  "offset" : 0
+
+               }
+
+            ],
+
+3            "secondary_text" : "IL, United States"
+
+         },
+
+         "terms" : [
+
+            {
+
+               "offset" : 0,
+
+!               "value" : "Paris"
+
+            },
+
+            {
+
+               "offset" : 7,
+
+               "value" : "IL"
+
+            },
+
+            {
+
+               "offset" : 11,
+
+)               "value" : "United States"
+
+            }
+
+         ],
+
+:         "types" : [ "locality", "political", "geocode" ]
+
+      }
+
+   ],
+
+   "status" : "OK"
+
+}
+
+
+HTTP/1.1 200 OK
+"Cache-Control: private, max-age=0
+&Content-Type: text/xml; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Server: Microsoft-IIS/7.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+$Date: Fri, 20 Oct 2017 19:44:17 GMT
+Content-Length: 4598
+
+„<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webserviceX.NET/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.webserviceX.NET/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+\    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webserviceX.NET/">
+(      <s:element name="ConversionRate">
+        <s:complexType>
+          <s:sequence>
+]            <s:element minOccurs="1" maxOccurs="1" name="FromCurrency" type="tns:Currency"/>
+[            <s:element minOccurs="1" maxOccurs="1" name="ToCurrency" type="tns:Currency"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+%      <s:simpleType name="Currency">
+(        <s:restriction base="s:string">
+'          <s:enumeration value="AFA"/>
+'          <s:enumeration value="ALL"/>
+'          <s:enumeration value="DZD"/>
+'          <s:enumeration value="ARS"/>
+'          <s:enumeration value="AWG"/>
+'          <s:enumeration value="AUD"/>
+'          <s:enumeration value="BSD"/>
+'          <s:enumeration value="BHD"/>
+'          <s:enumeration value="BDT"/>
+'          <s:enumeration value="BBD"/>
+'          <s:enumeration value="BZD"/>
+'          <s:enumeration value="BMD"/>
+'          <s:enumeration value="BTN"/>
+'          <s:enumeration value="BOB"/>
+'          <s:enumeration value="BWP"/>
+'          <s:enumeration value="BRL"/>
+'          <s:enumeration value="GBP"/>
+'          <s:enumeration value="BND"/>
+'          <s:enumeration value="BIF"/>
+'          <s:enumeration value="XOF"/>
+'          <s:enumeration value="XAF"/>
+'          <s:enumeration value="KHR"/>
+'          <s:enumeration value="CAD"/>
+'          <s:enumeration value="CVE"/>
+'          <s:enumeration value="KYD"/>
+'          <s:enumeration value="CLP"/>
+'          <s:enumeration value="CNY"/>
+'          <s:enumeration value="COP"/>
+'          <s:enumeration value="KMF"/>
+'          <s:enumeration value="CRC"/>
+'          <s:enumeration value="HRK"/>
+'          <s:enumeration value="CUP"/>
+'          <s:enumeration value="CYP"/>
+'          <s:enumeration value="CZK"/>
+'          <s:enumeration value="DKK"/>
+'          <s:enumeration value="DJF"/>
+'          <s:enumeration value="DOP"/>
+'          <s:enumeration value="XCD"/>
+'          <s:enumeration value="EGP"/>
+'          <s:enumeration value="SVC"/>
+'          <s:enumeration value="EEK"/>
+'          <s:enumeration value="ETB"/>
+'          <s:enumeration value="EUR"/>
+'          <s:enumeration value="FKP"/>
+'          <s:enumeration value="GMD"/>
+'          <s:enumeration value="GHC"/>
+'          <s:enumeration value="GIP"/>
+'          <s:enumeration value="XAU"/>
+'          <s:enumeration value="GTQ"/>
+'          <s:enumeration value="GNF"/>
+'          <s:enumeration value="GYD"/>
+'          <s:enumeration value="HTG"/>
+'          <s:enumeration value="HNL"/>
+'          <s:enumeration value="HKD"/>
+'          <s:enumeration value="HUF"/>
+'          <s:enumeration value="ISK"/>
+'          <s:enumeration value="INR"/>
+'          <s:enumeration value="IDR"/>
+'          <s:enumeration value="IQD"/>
+'          <s:enumeration value="ILS"/>
+'          <s:enumeration value="JMD"/>
+'          <s:enumeration value="JPY"/>
+'          <s:enumeration value="JOD"/>
+'          <s:enumeration value="KZT"/>
+'          <s:enumeration value="KES"/>
+'          <s:enumeration value="KRW"/>
+'          <s:enumeration value="KWD"/>
+'          <s:enumeration value="LAK"/>
+'          <s:enumeration value="LVL"/>
+'          <s:enumeration value="LBP"/>
+'          <s:enumeration value="LSL"/>
+'          <s:enumeration value="LRD"/>
+'          <s:enumeration value="LYD"/>
+'          <s:enumeration value="LTL"/>
+'          <s:enumeration value="MOP"/>
+'          <s:enumeration value="MKD"/>
+'          <s:enumeration value="MGF"/>
+'          <s:enumeration value="MWK"/>
+'          <s:enumeration value="MYR"/>
+'          <s:enumeration value="MVR"/>
+'          <s:enumeration value="MTL"/>
+'          <s:enumeration value="MRO"/>
+'          <s:enumeration value="MUR"/>
+'          <s:enumeration value="MXN"/>
+'          <s:enumeration value="MDL"/>
+'          <s:enumeration value="MNT"/>
+'          <s:enumeration value="MAD"/>
+'          <s:enumeration value="MZM"/>
+'          <s:enumeration value="MMK"/>
+'          <s:enumeration value="NAD"/>
+'          <s:enumeration value="NPR"/>
+'          <s:enumeration value="ANG"/>
+'          <s:enumeration value="NZD"/>
+'          <s:enumeration value="NIO"/>
+'          <s:enumeration value="NGN"/>
+'          <s:enumeration value="KPW"/>
+'          <s:enumeration value="NOK"/>
+'          <s:enumeration value="OMR"/>
+'          <s:enumeration value="XPF"/>
+'          <s:enumeration value="PKR"/>
+'          <s:enumeration value="XPD"/>
+'          <s:enumeration value="PAB"/>
+'          <s:enumeration value="PGK"/>
+'          <s:enumeration value="PYG"/>
+'          <s:enumeration value="PEN"/>
+'          <s:enumeration value="PHP"/>
+'          <s:enumeration value="XPT"/>
+'          <s:enumeration value="PLN"/>
+'          <s:enumeration value="QAR"/>
+'          <s:enumeration value="ROL"/>
+'          <s:enumeration value="RUB"/>
+'          <s:enumeration value="WST"/>
+'          <s:enumeration value="STD"/>
+'          <s:enumeration value="SAR"/>
+'          <s:enumeration value="SCR"/>
+'          <s:enumeration value="SLL"/>
+'          <s:enumeration value="XAG"/>
+'          <s:enumeration value="SGD"/>
+'          <s:enumeration value="SKK"/>
+'          <s:enumeration value="SIT"/>
+'          <s:enumeration value="SBD"/>
+'          <s:enumeration value="SOS"/>
+'          <s:enumeration value="ZAR"/>
+'          <s:enumeration value="LKR"/>
+'          <s:enumeration value="SHP"/>
+'          <s:enumeration value="SDD"/>
+'          <s:enumeration value="SRG"/>
+'          <s:enumeration value="SZL"/>
+'          <s:enumeration value="SEK"/>
+'          <s:enumeration value="CHF"/>
+'          <s:enumeration value="SYP"/>
+'          <s:enumeration value="TWD"/>
+'          <s:enumeration value="TZS"/>
+'          <s:enumeration value="THB"/>
+'          <s:enumeration value="TOP"/>
+'          <s:enumeration value="TTD"/>
+'          <s:enumeration value="TND"/>
+'          <s:enumeration value="TRL"/>
+'          <s:enumeration value="USD"/>
+'          <s:enumeration value="AED"/>
+'          <s:enumeration value="UGX"/>
+'          <s:enumeration value="UAH"/>
+'          <s:enumeration value="UYU"/>
+'          <s:enumeration value="VUV"/>
+'          <s:enumeration value="VEB"/>
+'          <s:enumeration value="VND"/>
+'          <s:enumeration value="YER"/>
+'          <s:enumeration value="YUM"/>
+'          <s:enumeration value="ZMK"/>
+'          <s:enumeration value="ZWD"/>
+'          <s:enumeration value="TRY"/>
+        </s:restriction>
+      </s:simpleType>
+0      <s:element name="ConversionRateResponse">
+        <s:complexType>
+          <s:sequence>
+a            <s:element minOccurs="1" maxOccurs="1" name="ConversionRateResult" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+1      <s:element name="double" type="s:double"/>
+    </s:schema>
+  </wsdl:types>
+-  <wsdl:message name="ConversionRateSoapIn">
+@    <wsdl:part name="parameters" element="tns:ConversionRate"/>
+  </wsdl:message>
+.  <wsdl:message name="ConversionRateSoapOut">
+H    <wsdl:part name="parameters" element="tns:ConversionRateResponse"/>
+  </wsdl:message>
+0  <wsdl:message name="ConversionRateHttpGetIn">
+5    <wsdl:part name="FromCurrency" type="s:string"/>
+3    <wsdl:part name="ToCurrency" type="s:string"/>
+  </wsdl:message>
+1  <wsdl:message name="ConversionRateHttpGetOut">
+2    <wsdl:part name="Body" element="tns:double"/>
+  </wsdl:message>
+1  <wsdl:message name="ConversionRateHttpPostIn">
+5    <wsdl:part name="FromCurrency" type="s:string"/>
+3    <wsdl:part name="ToCurrency" type="s:string"/>
+  </wsdl:message>
+2  <wsdl:message name="ConversionRateHttpPostOut">
+2    <wsdl:part name="Body" element="tns:double"/>
+  </wsdl:message>
+/  <wsdl:portType name="CurrencyConvertorSoap">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+7      <wsdl:input message="tns:ConversionRateSoapIn"/>
+9      <wsdl:output message="tns:ConversionRateSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+2  <wsdl:portType name="CurrencyConvertorHttpGet">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+:      <wsdl:input message="tns:ConversionRateHttpGetIn"/>
+<      <wsdl:output message="tns:ConversionRateHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+3  <wsdl:portType name="CurrencyConvertorHttpPost">
++    <wsdl:operation name="ConversionRate">
+Ž%      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;b&gt;Get conversion rate from one currency to another currency &lt;b&gt;&lt;br&gt;&lt;p&gt;&lt;b&gt;&lt;font color='#000080' size='1' face='Verdana'&gt;&lt;u&gt;Differenct currency Code and Names around the world&lt;/u&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;font face='Verdana' size='1'&gt;AFA-Afghanistan Afghani&lt;br&gt;ALL-Albanian Lek&lt;br&gt;DZD-Algerian Dinar&lt;br&gt;ARS-Argentine Peso&lt;br&gt;AWG-Aruba Florin&lt;br&gt;AUD-Australian Dollar&lt;br&gt;BSD-Bahamian Dollar&lt;br&gt;BHD-Bahraini Dinar&lt;br&gt;BDT-Bangladesh Taka&lt;br&gt;BBD-Barbados Dollar&lt;br&gt;BZD-Belize Dollar&lt;br&gt;BMD-Bermuda Dollar&lt;br&gt;BTN-Bhutan Ngultrum&lt;br&gt;BOB-Bolivian Boliviano&lt;br&gt;BWP-Botswana Pula&lt;br&gt;BRL-Brazilian Real&lt;br&gt;GBP-British Pound&lt;br&gt;BND-Brunei Dollar&lt;br&gt;BIF-Burundi Franc&lt;br&gt;XOF-CFA Franc (BCEAO)&lt;br&gt;XAF-CFA Franc (BEAC)&lt;br&gt;KHR-Cambodia Riel&lt;br&gt;CAD-Canadian Dollar&lt;br&gt;CVE-Cape Verde Escudo&lt;br&gt;KYD-Cayman Islands Dollar&lt;br&gt;CLP-Chilean Peso&lt;br&gt;CNY-Chinese Yuan&lt;br&gt;COP-Colombian Peso&lt;br&gt;KMF-Comoros Franc&lt;br&gt;CRC-Costa Rica Colon&lt;br&gt;HRK-Croatian Kuna&lt;br&gt;CUP-Cuban Peso&lt;br&gt;CYP-Cyprus Pound&lt;br&gt;CZK-Czech Koruna&lt;br&gt;DKK-Danish Krone&lt;br&gt;DJF-Dijibouti Franc&lt;br&gt;DOP-Dominican Peso&lt;br&gt;XCD-East Caribbean Dollar&lt;br&gt;EGP-Egyptian Pound&lt;br&gt;SVC-El Salvador Colon&lt;br&gt;EEK-Estonian Kroon&lt;br&gt;ETB-Ethiopian Birr&lt;br&gt;EUR-Euro&lt;br&gt;FKP-Falkland Islands Pound&lt;br&gt;GMD-Gambian Dalasi&lt;br&gt;GHC-Ghanian Cedi&lt;br&gt;GIP-Gibraltar Pound&lt;br&gt;XAU-Gold Ounces&lt;br&gt;GTQ-Guatemala Quetzal&lt;br&gt;GNF-Guinea Franc&lt;br&gt;GYD-Guyana Dollar&lt;br&gt;HTG-Haiti Gourde&lt;br&gt;HNL-Honduras Lempira&lt;br&gt;HKD-Hong Kong Dollar&lt;br&gt;HUF-Hungarian Forint&lt;br&gt;ISK-Iceland Krona&lt;br&gt;INR-Indian Rupee&lt;br&gt;IDR-Indonesian Rupiah&lt;br&gt;IQD-Iraqi Dinar&lt;br&gt;ILS-Israeli Shekel&lt;br&gt;JMD-Jamaican Dollar&lt;br&gt;JPY-Japanese Yen&lt;br&gt;JOD-Jordanian Dinar&lt;br&gt;KZT-Kazakhstan Tenge&lt;br&gt;KES-Kenyan Shilling&lt;br&gt;KRW-Korean Won&lt;br&gt;KWD-Kuwaiti Dinar&lt;br&gt;LAK-Lao Kip&lt;br&gt;LVL-Latvian Lat&lt;br&gt;LBP-Lebanese Pound&lt;br&gt;LSL-Lesotho Loti&lt;br&gt;LRD-Liberian Dollar&lt;br&gt;LYD-Libyan Dinar&lt;br&gt;LTL-Lithuanian Lita&lt;br&gt;MOP-Macau Pataca&lt;br&gt;MKD-Macedonian Denar&lt;br&gt;MGF-Malagasy Franc&lt;br&gt;MWK-Malawi Kwacha&lt;br&gt;MYR-Malaysian Ringgit&lt;br&gt;MVR-Maldives Rufiyaa&lt;br&gt;MTL-Maltese Lira&lt;br&gt;MRO-Mauritania Ougulya&lt;br&gt;MUR-Mauritius Rupee&lt;br&gt;MXN-Mexican Peso&lt;br&gt;MDL-Moldovan Leu&lt;br&gt;MNT-Mongolian Tugrik&lt;br&gt;MAD-Moroccan Dirham&lt;br&gt;MZM-Mozambique Metical&lt;br&gt;MMK-Myanmar Kyat&lt;br&gt;NAD-Namibian Dollar&lt;br&gt;NPR-Nepalese Rupee&lt;br&gt;ANG-Neth Antilles Guilder&lt;br&gt;NZD-New Zealand Dollar&lt;br&gt;NIO-Nicaragua Cordoba&lt;br&gt;NGN-Nigerian Naira&lt;br&gt;KPW-North Korean Won&lt;br&gt;NOK-Norwegian Krone&lt;br&gt;OMR-Omani Rial&lt;br&gt;XPF-Pacific Franc&lt;br&gt;PKR-Pakistani Rupee&lt;br&gt;XPD-Palladium Ounces&lt;br&gt;PAB-Panama Balboa&lt;br&gt;PGK-Papua New Guinea Kina&lt;br&gt;PYG-Paraguayan Guarani&lt;br&gt;PEN-Peruvian Nuevo Sol&lt;br&gt;PHP-Philippine Peso&lt;br&gt;XPT-Platinum Ounces&lt;br&gt;PLN-Polish Zloty&lt;br&gt;QAR-Qatar Rial&lt;br&gt;ROL-Romanian Leu&lt;br&gt;RUB-Russian Rouble&lt;br&gt;WST-Samoa Tala&lt;br&gt;STD-Sao Tome Dobra&lt;br&gt;SAR-Saudi Arabian Riyal&lt;br&gt;SCR-Seychelles Rupee&lt;br&gt;SLL-Sierra Leone Leone&lt;br&gt;XAG-Silver Ounces&lt;br&gt;SGD-Singapore Dollar&lt;br&gt;SKK-Slovak Koruna&lt;br&gt;SIT-Slovenian Tolar&lt;br&gt;SBD-Solomon Islands Dollar&lt;br&gt;SOS-Somali Shilling&lt;br&gt;ZAR-South African Rand&lt;br&gt;LKR-Sri Lanka Rupee&lt;br&gt;SHP-St Helena Pound&lt;br&gt;SDD-Sudanese Dinar&lt;br&gt;SRG-Surinam Guilder&lt;br&gt;SZL-Swaziland Lilageni&lt;br&gt;SEK-Swedish Krona&lt;br&gt;TRY-Turkey Lira&lt;br&gt;CHF-Swiss Franc&lt;br&gt;SYP-Syrian Pound&lt;br&gt;TWD-Taiwan Dollar&lt;br&gt;TZS-Tanzanian Shilling&lt;br&gt;THB-Thai Baht&lt;br&gt;TOP-Tonga Pa'anga&lt;br&gt;TTD-Trinidad&amp;amp;amp;Tobago Dollar&lt;br&gt;TND-Tunisian Dinar&lt;br&gt;TRL-Turkish Lira&lt;br&gt;USD-U.S. Dollar&lt;br&gt;AED-UAE Dirham&lt;br&gt;UGX-Ugandan Shilling&lt;br&gt;UAH-Ukraine Hryvnia&lt;br&gt;UYU-Uruguayan New Peso&lt;br&gt;VUV-Vanuatu Vatu&lt;br&gt;VEB-Venezuelan Bolivar&lt;br&gt;VND-Vietnam Dong&lt;br&gt;YER-Yemen Riyal&lt;br&gt;YUM-Yugoslav Dinar&lt;br&gt;ZMK-Zambian Kwacha&lt;br&gt;ZWD-Zimbabwe Dollar&lt;/font&gt;&lt;/p&gt;&lt;/blockquote&gt;</wsdl:documentation>
+;      <wsdl:input message="tns:ConversionRateHttpPostIn"/>
+=      <wsdl:output message="tns:ConversionRateHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+O  <wsdl:binding name="CurrencyConvertorSoap" type="tns:CurrencyConvertorSoap">
+E    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
++    <wsdl:operation name="ConversionRate">
+`      <soap:operation soapAction="http://www.webserviceX.NET/ConversionRate" style="document"/>
+      <wsdl:input>
+#        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+#        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+Q  <wsdl:binding name="CurrencyConvertorSoap12" type="tns:CurrencyConvertorSoap">
+G    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
++    <wsdl:operation name="ConversionRate">
+b      <soap12:operation soapAction="http://www.webserviceX.NET/ConversionRate" style="document"/>
+      <wsdl:input>
+%        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+%        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+U  <wsdl:binding name="CurrencyConvertorHttpGet" type="tns:CurrencyConvertorHttpGet">
+    <http:binding verb="GET"/>
++    <wsdl:operation name="ConversionRate">
+3      <http:operation location="/ConversionRate"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+$        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+W  <wsdl:binding name="CurrencyConvertorHttpPost" type="tns:CurrencyConvertorHttpPost">
+     <http:binding verb="POST"/>
++    <wsdl:operation name="ConversionRate">
+3      <http:operation location="/ConversionRate"/>
+      <wsdl:input>
+A        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+$        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+*  <wsdl:service name="CurrencyConvertor">
+Q    <wsdl:port name="CurrencyConvertorSoap" binding="tns:CurrencyConvertorSoap">
+S      <soap:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+U    <wsdl:port name="CurrencyConvertorSoap12" binding="tns:CurrencyConvertorSoap12">
+U      <soap12:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+W    <wsdl:port name="CurrencyConvertorHttpGet" binding="tns:CurrencyConvertorHttpGet">
+S      <http:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+Y    <wsdl:port name="CurrencyConvertorHttpPost" binding="tns:CurrencyConvertorHttpPost">
+S      <http:address location="http://www.webservicex.net/CurrencyConvertor.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
